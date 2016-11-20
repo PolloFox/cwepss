@@ -1,0 +1,20 @@
+uuid: 3e7f3125-109b-4eca-bd3e-8d403bab2cff
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cwepss_BS
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: cwepss_BS_local_actions
+theme: cwepss_BS
+region: header
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

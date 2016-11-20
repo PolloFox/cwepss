@@ -1,0 +1,22 @@
+uuid: 4ae3578c-1a6a-4692-a92a-90a9e5c19739
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cwepss_BS
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: cwepss_BS_content
+theme: cwepss_BS
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

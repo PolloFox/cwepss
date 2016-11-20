@@ -1,0 +1,14 @@
+uuid: 03ce3364-54a8-4817-abf1-74f8e6a566ce
+name: 'Cwepss: Commission wallonne d''étude et de protection des sites souterrains'
+mail: PolloFox@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: fr
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

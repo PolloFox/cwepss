@@ -1,0 +1,22 @@
+uuid: 7828555f-8d3e-49c7-a6ae-266940b7a544
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cwepss_BS
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: cwepss_BS_powered
+theme: cwepss_BS
+region: footer
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

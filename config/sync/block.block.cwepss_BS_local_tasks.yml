@@ -1,0 +1,22 @@
+uuid: ed0a9195-4e03-4fa5-8bd1-1bacdfadd86b
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cwepss_BS
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: cwepss_BS_local_tasks
+theme: cwepss_BS
+region: header
+weight: 10
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: 063faa72-0ea4-4b09-9e02-88bc41312ede
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - cwepss_BS
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: cwepss_BS_help
+theme: cwepss_BS
+region: help
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

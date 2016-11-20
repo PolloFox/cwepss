@@ -1,0 +1,22 @@
+uuid: d2402b88-2196-4de8-b2f9-1da3210988c9
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cwepss_BS
+_core:
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
+id: cwepss_BS_messages
+theme: cwepss_BS
+region: header
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

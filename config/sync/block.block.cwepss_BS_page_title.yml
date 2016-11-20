@@ -1,0 +1,20 @@
+uuid: 33e49e0e-b12e-4744-927f-0fa0127c1440
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cwepss_BS
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: cwepss_BS_page_title
+theme: cwepss_BS
+region: header
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }
