@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "968f1c413150f17274b360ebc6f3a480",
-    "content-hash": "45d1e325a41cdcff4c59fae500d4473b",
+    "hash": "6873e4fbd6c8041103971f8cb8fefd0b",
+    "content-hash": "795aad7245a6a3d2059b7180bd539761",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1075,7 +1075,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.18.zip",
-                "reference": null,
+                "reference": "8.x-1.18",
                 "shasum": "ea5b6b5eb20757fda12e7220819a750e2575359b"
             },
             "require": {
@@ -1180,7 +1180,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/adminimal_theme-8.x-1.3.zip",
-                "reference": null,
+                "reference": "8.x-1.3",
                 "shasum": "bb9f280bcdbd7e4d384a925c685a2aa1feed8419"
             },
             "require": {
@@ -1226,7 +1226,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/bootstrap-8.x-3.1.zip",
-                "reference": null,
+                "reference": "8.x-3.1",
                 "shasum": "12efa571153c47c8634066d51f76e19dc9f7db5c"
             },
             "require": {
@@ -1266,6 +1266,61 @@
             }
         },
         {
+            "name": "drupal/colorbox",
+            "version": "dev-1.x",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/colorbox",
+                "reference": "c96838f42617c1509abbf9c62a50ff2b7e4f4831"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.2+4-dev",
+                    "datestamp": "1481021883"
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Sam152",
+                    "homepage": "https://www.drupal.org/user/1485048"
+                },
+                {
+                    "name": "frjo",
+                    "homepage": "https://www.drupal.org/user/5546"
+                },
+                {
+                    "name": "grisendo",
+                    "homepage": "https://www.drupal.org/user/848238"
+                },
+                {
+                    "name": "jdwfly",
+                    "homepage": "https://www.drupal.org/user/298179"
+                },
+                {
+                    "name": "podarok",
+                    "homepage": "https://www.drupal.org/user/116002"
+                }
+            ],
+            "description": "A light-weight, customizable lightbox plugin for jQuery.",
+            "homepage": "https://www.drupal.org/project/colorbox",
+            "support": {
+                "source": "https://cgit.drupalcode.org/colorbox",
+                "issues": "https://www.drupal.org/project/colorbox"
+            },
+            "time": "2016-12-06 10:55:31"
+        },
+        {
             "name": "drupal/config_installer",
             "version": "1.3.0",
             "source": {
@@ -1276,7 +1331,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/config_installer-8.x-1.3.zip",
-                "reference": null,
+                "reference": "8.x-1.3",
                 "shasum": "1507bca7a9f7d5a8ca759b8d717d055629b8f045"
             },
             "require": {
