@@ -1,17 +1,16 @@
-uuid: 95ff7430-f3ee-4292-aef6-0476228dad7b
+uuid: 88c7b249-f911-4b5a-9c78-7cacd2081083
 langcode: fr
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
-id: node.field_tags
-field_name: field_tags
+    - video_embed_field
+id: node.field_videos
+field_name: field_videos
 entity_type: node
-type: entity_reference
-settings:
-  target_type: taxonomy_term
-module: core
+type: video_embed_field
+settings: {  }
+module: video_embed_field
 locked: false
 cardinality: -1
 translatable: true

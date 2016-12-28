@@ -1,0 +1,21 @@
+uuid: a4a534d3-ef95-43c4-8c3d-cf8f214b9f12
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_locations
+    - node.type.article
+  module:
+    - geofield
+id: node.article.field_locations
+field_name: field_locations
+entity_type: node
+bundle: article
+label: Localisations
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

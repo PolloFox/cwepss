@@ -1,7 +1,9 @@
 uuid: b7360ded-0ae8-4058-9c8e-66986436d795
 langcode: fr
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
 third_party_settings:
   menu_ui:
     available_menus:
@@ -11,7 +13,7 @@ _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
 name: Article
 type: article
-description: 'Use <em>articles</em> for time-sensitive content like news, press releases or blog posts.'
+description: 'Utilisez le type de contenu <em>articles</em> pour encoder les actualités, les événements,...'
 help: ''
 new_revision: true
 preview_mode: 1

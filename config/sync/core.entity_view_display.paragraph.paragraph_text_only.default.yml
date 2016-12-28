@@ -1,0 +1,23 @@
+uuid: 82ab7b4b-3a13-4b4d-b857-81c0e4bf46fa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_text_only.field_body
+    - paragraphs.paragraphs_type.paragraph_text_only
+  module:
+    - text
+id: paragraph.paragraph_text_only.default
+targetEntityType: paragraph
+bundle: paragraph_text_only
+mode: default
+content:
+  field_body:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+hidden:
+  created: true
+  uid: true

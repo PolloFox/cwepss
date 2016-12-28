@@ -1,0 +1,21 @@
+uuid: ec160709-8f47-4780-a6e0-43ef84c927a7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.article
+  module:
+    - text
+id: node.article.field_body
+field_name: field_body
+entity_type: node
+bundle: article
+label: 'Corps de texte'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

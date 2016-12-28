@@ -1,0 +1,6 @@
+uuid: 9eed1250-3b16-4234-ac7c-7b928965f3b9
+langcode: fr
+status: true
+dependencies: {  }
+id: paragraph_video_text
+label: 'Video / Sous-titre / Texte'

@@ -1,0 +1,21 @@
+uuid: 921a2fbd-08c2-447e-a461-c52752e6d45f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.paragraph_image_text
+  module:
+    - text
+id: paragraph.paragraph_image_text.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: paragraph_image_text
+label: 'Corps de texte'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

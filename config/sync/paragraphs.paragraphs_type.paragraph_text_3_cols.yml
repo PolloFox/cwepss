@@ -1,0 +1,6 @@
+uuid: 32416df7-679e-4915-bf73-f34d0c9dc133
+langcode: fr
+status: true
+dependencies: {  }
+id: paragraph_text_3_cols
+label: 'Texte sur trois colonnes'

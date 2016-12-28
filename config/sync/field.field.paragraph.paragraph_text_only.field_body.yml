@@ -1,0 +1,21 @@
+uuid: 3c8779ee-6ba8-485a-8d49-4659d7ff8102
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.paragraph_text_only
+  module:
+    - text
+id: paragraph.paragraph_text_only.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: paragraph_text_only
+label: 'Corps de texte'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

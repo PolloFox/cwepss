@@ -1,0 +1,6 @@
+uuid: 6e045da5-1b43-4fc3-a2b1-accbd96c69b3
+langcode: fr
+status: true
+dependencies: {  }
+id: paragraph_image_text
+label: 'Image / Sous-titre / Texte'

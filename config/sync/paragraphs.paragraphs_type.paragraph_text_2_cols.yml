@@ -1,0 +1,6 @@
+uuid: cafed440-0d9a-4f6b-8b82-69d5a259f1f1
+langcode: fr
+status: true
+dependencies: {  }
+id: paragraph_text_2_cols
+label: 'Texte sur deux colonnes'

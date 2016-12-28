@@ -1,0 +1,6 @@
+uuid: 6cd8ba47-3162-4c7e-9890-839645129aa9
+langcode: fr
+status: true
+dependencies: {  }
+id: paragraph_text_only
+label: 'Texte seul'

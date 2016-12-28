@@ -1,0 +1,9 @@
+uuid: 7b249d20-128a-48ba-9560-db207b626ca8
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Catégorie d''articles'
+vid: taxa_articles_category
+description: 'Catégorisation du type d''article: news, événement,...'
+hierarchy: 0
+weight: 0

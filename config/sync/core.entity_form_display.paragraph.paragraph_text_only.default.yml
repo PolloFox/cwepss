@@ -1,0 +1,25 @@
+uuid: eb719276-bed0-4c67-a4b5-7b701b9e3d36
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.paragraph_text_only.field_body
+    - paragraphs.paragraphs_type.paragraph_text_only
+  module:
+    - text
+id: paragraph.paragraph_text_only.default
+targetEntityType: paragraph
+bundle: paragraph_text_only
+mode: default
+content:
+  field_body:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+hidden:
+  created: true
+  status: true
+  uid: true

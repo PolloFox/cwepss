@@ -1,17 +1,16 @@
-uuid: 95ff7430-f3ee-4292-aef6-0476228dad7b
+uuid: 67381c93-5026-4e2e-8622-3e4b25f15fab
 langcode: fr
 status: true
 dependencies:
   module:
+    - link
     - node
-    - taxonomy
-id: node.field_tags
-field_name: field_tags
+id: node.field_links
+field_name: field_links
 entity_type: node
-type: entity_reference
-settings:
-  target_type: taxonomy_term
-module: core
+type: link
+settings: {  }
+module: link
 locked: false
 cardinality: -1
 translatable: true
