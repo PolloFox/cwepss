@@ -1,0 +1,10 @@
+uuid: a592877b-f949-4378-99a8-6fa9c3fefec5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.token
+label: 'Jeton (token)'
+targetEntityType: block_content
+cache: true

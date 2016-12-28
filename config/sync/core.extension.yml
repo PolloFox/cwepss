@@ -8,19 +8,26 @@ module:
   breakpoint: 0
   ckeditor: 0
   color: 0
+  colorbox: 0
   comment: 0
   config: 0
   contact: 0
   contextual: 0
+  ctools: 0
+  ctools_block: 0
+  ctools_views: 0
   datetime: 0
   dblog: 0
+  devel: 0
   devel_generate: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
+  geofield: 0
   help: 0
   history: 0
   image: 0
@@ -33,6 +40,7 @@ module:
   options: 0
   page_cache: 0
   path: 0
+  pathauto: 0
   quickedit: 0
   rdf: 0
   responsive_image: 0
@@ -42,11 +50,14 @@ module:
   taxonomy: 0
   telephone: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0
   user: 0
+  video_embed_field: 0
   views_ui: 0
+  webprofiler: 0
   menu_link_content: 1
   views: 10
   standard: 1000
@@ -60,3 +71,4 @@ theme:
   cwepss_BS: 0
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
+langcode: fr

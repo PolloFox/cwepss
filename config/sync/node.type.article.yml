@@ -1,7 +1,12 @@
 uuid: b7360ded-0ae8-4058-9c8e-66986436d795
-langcode: en
+langcode: fr
 status: true
 dependencies: {  }
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
 name: Article
