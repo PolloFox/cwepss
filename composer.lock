@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "30f6ce27703326b1f2020539999bd480",
-    "content-hash": "41841d4ba462d7ee3549bea36f18d9b0",
+    "hash": "41429f8442b248ffd38b895c0b38e48a",
+    "content-hash": "9057e6450ce30b7c530e0652c57a8f06",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1886,49 +1886,6 @@
             "homepage": "https://www.drupal.org/project/field_group",
             "support": {
                 "source": "http://cgit.drupalcode.org/field_group"
-            }
-        },
-        {
-            "name": "drupal/filefield_paths",
-            "version": "1.0.0-beta1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/filefield_paths",
-                "reference": "8.x-1.0-beta1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/filefield_paths-8.x-1.0-beta1.zip",
-                "reference": null,
-                "shasum": "3d74e96b1c8b7e02970be0b41643e8b3a617d008"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1451020739"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Deciphered",
-                    "homepage": "https://www.drupal.org/user/103796"
-                }
-            ],
-            "description": "Adds improved Token based file sorting and renaming functionalities.",
-            "homepage": "https://www.drupal.org/project/filefield_paths",
-            "support": {
-                "source": "http://cgit.drupalcode.org/filefield_paths"
             }
         },
         {
@@ -6663,7 +6620,6 @@
         "drupal/pathauto": 10,
         "drupal/token": 10,
         "drupal/field_group": 5,
-        "drupal/filefield_paths": 10,
         "drupal/devel": 15
     },
     "prefer-stable": true,

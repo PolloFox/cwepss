@@ -29,8 +29,7 @@
         "drupal/colorbox": "^1.2",
         "drupal/pathauto": "^1.0@beta",
         "drupal/token": "^1.0@beta",
-        "drupal/field_group": "^1.0@RC",
-        "drupal/filefield_paths": "^1.0@beta"
+        "drupal/field_group": "^1.0@RC"
     },
     "require-dev": {
         "behat/mink": "~1.7",
