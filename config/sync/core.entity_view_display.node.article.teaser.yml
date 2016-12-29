@@ -17,4 +17,15 @@ content:
   links:
     weight: 100
 hidden:
+  field_articles_category: true
+  field_articles_event_date: true
+  field_body: true
+  field_documents: true
+  field_images: true
+  field_links: true
+  field_locations: true
+  field_summary: true
+  field_tags: true
+  field_thumbnail: true
+  field_videos: true
   langcode: true
