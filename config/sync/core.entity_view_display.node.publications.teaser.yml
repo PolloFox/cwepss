@@ -15,4 +15,19 @@ content:
   links:
     weight: 100
 hidden:
+  field_body: true
+  field_documents: true
+  field_images: true
+  field_links: true
+  field_locations: true
+  field_publications_bib_refs: true
+  field_publications_date: true
+  field_publications_highlights: true
+  field_publications_matter_table: true
+  field_publications_rel_content: true
+  field_publications_square_img: true
+  field_publications_type: true
+  field_publications_vert_image: true
+  field_summary: true
+  field_tags: true
   langcode: true

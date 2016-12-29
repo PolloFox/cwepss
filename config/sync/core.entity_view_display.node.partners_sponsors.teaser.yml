@@ -15,4 +15,8 @@ content:
   links:
     weight: 100
 hidden:
+  field_body: true
+  field_partners_rel_content: true
+  field_partners_type: true
+  field_summary: true
   langcode: true

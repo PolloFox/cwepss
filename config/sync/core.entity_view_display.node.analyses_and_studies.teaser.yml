@@ -15,4 +15,16 @@ content:
   links:
     weight: 100
 hidden:
+  field_analysis_date: true
+  field_analysis_rel_content: true
+  field_analysis_types: true
+  field_body: true
+  field_documents: true
+  field_images: true
+  field_links: true
+  field_locations: true
+  field_presentation_p_1: true
+  field_summary: true
+  field_tags: true
+  field_videos: true
   langcode: true

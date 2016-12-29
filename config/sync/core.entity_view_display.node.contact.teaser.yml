@@ -15,4 +15,11 @@ content:
   links:
     weight: 100
 hidden:
+  field_address: true
+  field_body: true
+  field_content_reference: true
+  field_links: true
+  field_locations: true
+  field_mails: true
+  field_phone: true
   langcode: true
