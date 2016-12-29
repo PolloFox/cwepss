@@ -1,0 +1,18 @@
+uuid: f29833b3-d8fe-4c01-b806-e7dbbe70dbd7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Analyses et Études'
+type: analyses_and_studies
+description: 'Utilisez ce type de contenu pour introduire les <em>analyses</em> et les <em>analyses</em> réalisées par le CWEPSS'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,11 @@
+uuid: ec895b7c-9620-49c9-87bd-cd2d2f942756
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.taxa_analysis_studies_types
+id: taxonomy_term.taxa_analysis_studies_types
+target_entity_type_id: taxonomy_term
+target_bundle: taxa_analysis_studies_types
+default_langcode: site_default
+language_alterable: false

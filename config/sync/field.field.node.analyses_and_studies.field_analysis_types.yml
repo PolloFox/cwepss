@@ -1,0 +1,28 @@
+uuid: 2137b54a-f473-4b73-8194-d54766ba2bae
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_analysis_types
+    - node.type.analyses_and_studies
+    - taxonomy.vocabulary.taxa_analysis_studies_types
+id: node.analyses_and_studies.field_analysis_types
+field_name: field_analysis_types
+entity_type: node
+bundle: analyses_and_studies
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      taxa_analysis_studies_types: taxa_analysis_studies_types
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

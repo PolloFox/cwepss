@@ -1,0 +1,11 @@
+uuid: afc3d05f-d556-4be7-97a4-6587dcc56eb1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.contact
+id: node.contact
+target_entity_type_id: node
+target_bundle: contact
+default_langcode: site_default
+language_alterable: false

@@ -1,22 +1,22 @@
-uuid: 1b87cc34-ff44-4691-8c07-2ec6c7cf0850
+uuid: 9e1450b7-7456-4e02-8f3f-b8295c8e3c25
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.article.field_articles_category
-    - field.field.node.article.field_articles_event_date
-    - field.field.node.article.field_articles_rel_content
-    - field.field.node.article.field_body
-    - field.field.node.article.field_documents
-    - field.field.node.article.field_images
-    - field.field.node.article.field_links
-    - field.field.node.article.field_locations
-    - field.field.node.article.field_summary
-    - field.field.node.article.field_tags
-    - field.field.node.article.field_thumbnail
-    - field.field.node.article.field_videos
+    - field.field.node.analyses_and_studies.field_analysis_date
+    - field.field.node.analyses_and_studies.field_analysis_rel_content
+    - field.field.node.analyses_and_studies.field_analysis_types
+    - field.field.node.analyses_and_studies.field_body
+    - field.field.node.analyses_and_studies.field_documents
+    - field.field.node.analyses_and_studies.field_images
+    - field.field.node.analyses_and_studies.field_links
+    - field.field.node.analyses_and_studies.field_locations
+    - field.field.node.analyses_and_studies.field_presentation_p_1
+    - field.field.node.analyses_and_studies.field_summary
+    - field.field.node.analyses_and_studies.field_tags
+    - field.field.node.analyses_and_studies.field_videos
     - image.style.thumbnail
-    - node.type.article
+    - node.type.analyses_and_studies
   module:
     - datetime
     - field_group
@@ -24,104 +24,116 @@ dependencies:
     - geofield
     - image
     - link
+    - paragraphs
     - path
     - text
     - video_embed_field
 third_party_settings:
   field_group:
-    group_articles:
+    group_analyses_tabs:
       children:
-        - group_articles_general
-        - group_articles_images
-        - group_articles_multimedia
-        - group_articles_links
-        - group_articles_rel_content_tab
+        - group_analysis_general_tab
+        - group_analysis_images_tab
+        - group_analysis_rel_media
+        - group_analysis_locations
+        - group_analysis_links_tab
+        - group_analysis_rel_content_tab
       parent_name: ''
       weight: 0
       format_type: tabs
       format_settings:
-        id: articles_tabs
+        id: analysis_tabs
         classes: ''
         direction: horizontal
-      label: Actualités
-    group_articles_general:
+      label: Analyses
+    group_analysis_general_tab:
       children:
         - title
-        - field_articles_category
+        - field_analysis_types
+        - field_analysis_date
         - field_summary
         - field_body
-        - field_articles_event_date
-        - field_locations
-        - field_tags
-      parent_name: group_articles
-      weight: 20
+        - field_presentation_p_1
+      parent_name: group_analyses_tabs
+      weight: 5
       format_type: tab
       format_settings:
-        id: articles_general_tab
+        id: analysis_general_tab
         classes: ''
         formatter: open
         description: ''
         required_fields: true
       label: Général
-    group_articles_images:
+    group_analysis_images_tab:
       children:
-        - field_thumbnail
         - field_images
-      parent_name: group_articles
-      weight: 21
+      parent_name: group_analyses_tabs
+      weight: 6
       format_type: tab
       format_settings:
-        id: articles_illustrations_tab
+        id: analysis_images_tab
         classes: ''
         formatter: closed
         description: ''
         required_fields: true
       label: Images
-    group_articles_multimedia:
+    group_analysis_rel_media:
       children:
         - field_documents
         - field_videos
-      parent_name: group_articles
-      weight: 22
+      parent_name: group_analyses_tabs
+      weight: 7
       format_type: tab
       format_settings:
-        id: articles_multimedia_tab
+        id: analysis_rel_media_tab
         classes: ''
         formatter: closed
         description: ''
         required_fields: true
       label: 'Multimedia lié'
-    group_articles_links:
+    group_analysis_locations:
       children:
-        - field_links
-      parent_name: group_articles
-      weight: 23
+        - field_locations
+      parent_name: group_analyses_tabs
+      weight: 8
       format_type: tab
       format_settings:
-        id: articles_links_tab
+        id: analysis_locations_tab
         classes: ''
         formatter: closed
         description: ''
         required_fields: true
-      label: Liens
-    group_articles_rel_content_tab:
+      label: Localisation(s)
+    group_analysis_links_tab:
       children:
-        - field_articles_rel_content
-      parent_name: group_articles
-      weight: 24
+        - field_links
+        - field_tags
+      parent_name: group_analyses_tabs
+      weight: 9
       format_type: tab
       format_settings:
-        id: articles_rel_content_tab
+        id: analysis_links_tab
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Liens et Tags'
+    group_analysis_rel_content_tab:
+      children:
+        - field_analysis_rel_content
+      parent_name: group_analyses_tabs
+      weight: 10
+      format_type: tab
+      format_settings:
+        id: analysis_rel_content_tab
         classes: ''
         formatter: closed
         description: ''
         required_fields: true
       label: 'Contenu lié'
-_core:
-  default_config_hash: 7CvVDwPYotAZFBa36mcpMKZOfVRRp_iGuPHpHaavI6E
-id: node.article.default
+id: node.analyses_and_studies.default
 targetEntityType: node
-bundle: article
+bundle: analyses_and_studies
 mode: default
 content:
   created:
@@ -129,7 +141,20 @@ content:
     weight: 4
     settings: {  }
     third_party_settings: {  }
-  field_articles_category:
+  field_analysis_date:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_analysis_rel_content:
+    weight: 26
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_analysis_types:
     weight: 2
     settings:
       match_operator: CONTAINS
@@ -137,82 +162,72 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-  field_articles_event_date:
-    weight: 5
-    settings: {  }
-    third_party_settings: {  }
-    type: datetime_default
-  field_articles_rel_content:
-    weight: 34
-    settings:
-      match_operator: CONTAINS
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: entity_reference_autocomplete
   field_body:
-    weight: 4
+    weight: 5
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
   field_documents:
-    weight: 31
+    weight: 13
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
   field_images:
-    weight: 30
+    weight: 12
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
   field_links:
-    weight: 33
+    weight: 15
     settings:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
   field_locations:
-    weight: 6
+    weight: 16
     settings:
-      html5_geolocation: false
+      html5_geolocation: true
     third_party_settings: {  }
     type: geofield_latlon
+  field_presentation_p_1:
+    weight: 6
+    settings:
+      title: Paragraphe
+      title_plural: Paragraphs
+      edit_mode: open
+      add_mode: dropdown
+      form_display_mode: default
+    third_party_settings: {  }
+    type: entity_reference_paragraphs
   field_summary:
-    weight: 3
+    weight: 4
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
   field_tags:
-    weight: 7
+    weight: 16
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
-  field_thumbnail:
-    weight: 29
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
   field_videos:
-    weight: 32
+    weight: 14
     settings: {  }
     third_party_settings: {  }
     type: video_embed_field_textfield
   path:
     type: path
-    weight: 5
+    weight: 6
     settings: {  }
     third_party_settings: {  }
   title:

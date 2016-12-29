@@ -1,24 +1,24 @@
-uuid: 4c3b5dd6-5146-4eb7-b3dd-9b0d4b8c89aa
+uuid: 694707eb-ba86-4d53-9a7e-67c8ef1e0c19
 langcode: fr
 status: true
 dependencies:
   config:
     - field.storage.node.field_documents
-    - node.type.article
+    - node.type.analyses_and_studies
   module:
     - file
-id: node.article.field_documents
+id: node.analyses_and_studies.field_documents
 field_name: field_documents
 entity_type: node
-bundle: article
+bundle: analyses_and_studies
 label: Documents
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: 'articles/documents/[date:custom:Y]-[date:custom:m]'
+  file_directory: 'analysis/documents/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'txt pdf doc docx xls xlsx ppt pptx odt ods odp rtf csv shp kml'
   max_filesize: 10MB
   description_field: true

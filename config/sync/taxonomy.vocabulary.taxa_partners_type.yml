@@ -1,0 +1,9 @@
+uuid: 9f3bd900-06fc-4d4d-8f85-2844278b0afe
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Types de partenaires'
+vid: taxa_partners_type
+description: ''
+hierarchy: 0
+weight: 0

@@ -3,8 +3,10 @@ langcode: fr
 status: true
 dependencies:
   config:
+    - field.field.node.page.field_presentation_p_1
     - node.type.page
   module:
+    - entity_reference_revisions
     - user
 _core:
   default_config_hash: oZ-7vpIJxjxL2up9B5KrJGD0lazQ9aN0P-fIPo6OrSU
@@ -13,6 +15,14 @@ targetEntityType: node
 bundle: page
 mode: default
 content:
+  field_presentation_p_1:
+    type: entity_reference_revisions_entity_view
+    weight: 102
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
   links:
     weight: 101
 hidden:

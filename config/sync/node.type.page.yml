@@ -1,12 +1,19 @@
 uuid: ac068ba0-5b11-400b-b0f0-196c974bdb9a
 langcode: fr
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
 _core:
   default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
-name: 'Basic page'
+name: 'Pages de présentation'
 type: page
-description: 'Use <em>basic pages</em> for your static content, such as an ''About us'' page.'
+description: 'Utilisez les <em>pages de présentation</em> pour du contenu ''statique'' (pages intermédiaires,...).'
 help: ''
 new_revision: true
 preview_mode: 1

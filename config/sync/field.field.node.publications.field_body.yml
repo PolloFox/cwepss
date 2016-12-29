@@ -1,0 +1,21 @@
+uuid: d907be8f-50eb-497a-8709-7bb48b88f4cc
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.publications
+  module:
+    - text
+id: node.publications.field_body
+field_name: field_body
+entity_type: node
+bundle: publications
+label: 'Corps de texte'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,25 @@
+uuid: 16864b8c-2b95-454f-a6eb-19f2c63dcde5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_videos
+    - node.type.analyses_and_studies
+  module:
+    - video_embed_field
+id: node.analyses_and_studies.field_videos
+field_name: field_videos
+entity_type: node
+bundle: analyses_and_studies
+label: Vidéos
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    vimeo: vimeo
+    youtube: youtube
+    youtube_playlist: '0'
+field_type: video_embed_field

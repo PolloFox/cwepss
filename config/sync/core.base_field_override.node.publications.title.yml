@@ -1,0 +1,18 @@
+uuid: b1754912-65e2-409f-aa4c-0a17a83a7933
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.publications
+id: node.publications.title
+field_name: title
+entity_type: node
+bundle: publications
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

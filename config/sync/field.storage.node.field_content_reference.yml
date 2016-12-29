@@ -1,0 +1,19 @@
+uuid: 709534ec-e27a-466d-a48c-106a3d4be4ef
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_content_reference
+field_name: field_content_reference
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

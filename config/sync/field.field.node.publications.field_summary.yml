@@ -1,0 +1,21 @@
+uuid: 71030512-e769-4b1b-b023-7dedac1b5c04
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.publications
+  module:
+    - text
+id: node.publications.field_summary
+field_name: field_summary
+entity_type: node
+bundle: publications
+label: Résumé
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

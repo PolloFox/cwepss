@@ -1,0 +1,11 @@
+uuid: 46a96f0d-00a5-4e3d-ac3e-ea19f7bf4ca1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.analyses_and_studies
+id: node.analyses_and_studies
+target_entity_type_id: node
+target_bundle: analyses_and_studies
+default_langcode: site_default
+language_alterable: false

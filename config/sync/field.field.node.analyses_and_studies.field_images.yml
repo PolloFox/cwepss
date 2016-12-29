@@ -1,24 +1,24 @@
-uuid: ab764ca0-7054-43b7-bc8d-f6c4e8d7f5c1
+uuid: c03b71ba-39da-4845-9b54-99c98cac047b
 langcode: fr
 status: true
 dependencies:
   config:
     - field.storage.node.field_images
-    - node.type.article
+    - node.type.analyses_and_studies
   module:
     - image
-id: node.article.field_images
+id: node.analyses_and_studies.field_images
 field_name: field_images
 entity_type: node
-bundle: article
+bundle: analyses_and_studies
 label: Images
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: 'articles/images/[date:custom:Y]-[date:custom:m]'
+  file_directory: 'analysis/images/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
   max_filesize: 8MB
   max_resolution: ''

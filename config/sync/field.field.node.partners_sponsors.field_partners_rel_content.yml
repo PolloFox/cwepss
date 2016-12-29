@@ -1,0 +1,33 @@
+uuid: ea603c59-c3a0-4fec-9f72-8a36e21414b4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_partners_rel_content
+    - node.type.analyses_and_studies
+    - node.type.article
+    - node.type.partners_sponsors
+    - node.type.publications
+id: node.partners_sponsors.field_partners_rel_content
+field_name: field_partners_rel_content
+entity_type: node
+bundle: partners_sponsors
+label: 'Contenu lié'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      analyses_and_studies: analyses_and_studies
+      article: article
+      publications: publications
+    sort:
+      field: type
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: analyses_and_studies
+field_type: entity_reference

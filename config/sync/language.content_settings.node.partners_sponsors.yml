@@ -1,0 +1,11 @@
+uuid: de1f658b-72ba-4403-9fd0-668515d6a755
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.partners_sponsors
+id: node.partners_sponsors
+target_entity_type_id: node
+target_bundle: partners_sponsors
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,21 @@
+uuid: 62d79309-4220-47ab-a2db-e15e26666fe7
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.partners_sponsors
+  module:
+    - text
+id: node.partners_sponsors.field_body
+field_name: field_body
+entity_type: node
+bundle: partners_sponsors
+label: 'Corps de texte'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

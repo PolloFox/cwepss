@@ -1,0 +1,21 @@
+uuid: 6b827806-cc41-446d-9083-8d32ccb8e3f1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publications_highlights
+    - node.type.publications
+  module:
+    - text
+id: node.publications.field_publications_highlights
+field_name: field_publications_highlights
+entity_type: node
+bundle: publications
+label: Highlights
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

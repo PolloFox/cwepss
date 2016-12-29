@@ -1,0 +1,37 @@
+uuid: 47a1137d-6ee4-43d5-adc8-39d5ee67c286
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_reference
+    - node.type.analyses_and_studies
+    - node.type.article
+    - node.type.contact
+    - node.type.page
+    - node.type.partners_sponsors
+    - node.type.publications
+id: node.contact.field_content_reference
+field_name: field_content_reference
+entity_type: node
+bundle: contact
+label: Référence(s)
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      analyses_and_studies: analyses_and_studies
+      article: article
+      page: page
+      partners_sponsors: partners_sponsors
+      publications: publications
+    sort:
+      field: type
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: article
+field_type: entity_reference

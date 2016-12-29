@@ -1,23 +1,24 @@
-uuid: 5be2c9b0-baf4-4510-8b94-41ae9ce0798f
+uuid: e2c56ac9-3110-4513-b0ed-3dd94062072e
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.field.node.article.field_articles_category
-    - field.field.node.article.field_articles_event_date
-    - field.field.node.article.field_articles_rel_content
-    - field.field.node.article.field_body
-    - field.field.node.article.field_documents
-    - field.field.node.article.field_images
-    - field.field.node.article.field_links
-    - field.field.node.article.field_locations
-    - field.field.node.article.field_summary
-    - field.field.node.article.field_tags
-    - field.field.node.article.field_thumbnail
-    - field.field.node.article.field_videos
-    - node.type.article
+    - field.field.node.analyses_and_studies.field_analysis_date
+    - field.field.node.analyses_and_studies.field_analysis_rel_content
+    - field.field.node.analyses_and_studies.field_analysis_types
+    - field.field.node.analyses_and_studies.field_body
+    - field.field.node.analyses_and_studies.field_documents
+    - field.field.node.analyses_and_studies.field_images
+    - field.field.node.analyses_and_studies.field_links
+    - field.field.node.analyses_and_studies.field_locations
+    - field.field.node.analyses_and_studies.field_presentation_p_1
+    - field.field.node.analyses_and_studies.field_summary
+    - field.field.node.analyses_and_studies.field_tags
+    - field.field.node.analyses_and_studies.field_videos
+    - node.type.analyses_and_studies
   module:
     - datetime
+    - entity_reference_revisions
     - file
     - geofield
     - image
@@ -25,30 +26,28 @@ dependencies:
     - text
     - user
     - video_embed_field
-_core:
-  default_config_hash: 1x2VMLBhwpRPa-_Q_6J_ZN4QNazwCmP1dt01Zc-Iors
-id: node.article.default
+id: node.analyses_and_studies.default
 targetEntityType: node
-bundle: article
+bundle: analyses_and_studies
 mode: default
 content:
-  field_articles_category:
-    weight: 101
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-  field_articles_event_date:
-    weight: 104
+  field_analysis_date:
+    weight: 105
     label: above
     settings:
       format_type: medium
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
-  field_articles_rel_content:
+  field_analysis_rel_content:
     weight: 112
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_analysis_types:
+    weight: 101
     label: above
     settings:
       link: true
@@ -92,6 +91,14 @@ content:
       output_format: wkt
     third_party_settings: {  }
     type: geofield_default
+  field_presentation_p_1:
+    weight: 104
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    type: entity_reference_revisions_entity_view
   field_summary:
     weight: 102
     label: above
@@ -105,14 +112,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-  field_thumbnail:
-    weight: 105
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
-    third_party_settings: {  }
-    type: image
   field_videos:
     weight: 108
     label: above

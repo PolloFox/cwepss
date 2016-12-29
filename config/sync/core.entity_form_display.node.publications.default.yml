@@ -1,0 +1,277 @@
+uuid: f2d442d9-ac02-40dd-8a42-0c6cfdc03fff
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.publications.field_body
+    - field.field.node.publications.field_documents
+    - field.field.node.publications.field_images
+    - field.field.node.publications.field_links
+    - field.field.node.publications.field_locations
+    - field.field.node.publications.field_publications_bib_refs
+    - field.field.node.publications.field_publications_date
+    - field.field.node.publications.field_publications_highlights
+    - field.field.node.publications.field_publications_matter_table
+    - field.field.node.publications.field_publications_rel_content
+    - field.field.node.publications.field_publications_square_img
+    - field.field.node.publications.field_publications_type
+    - field.field.node.publications.field_publications_vert_image
+    - field.field.node.publications.field_summary
+    - field.field.node.publications.field_tags
+    - image.style.thumbnail
+    - node.type.publications
+  module:
+    - datetime
+    - field_group
+    - file
+    - geofield
+    - image
+    - link
+    - path
+    - text
+third_party_settings:
+  field_group:
+    group_publications_tabs:
+      children:
+        - group_publications_general_tab
+        - group_publications_bib_ref_tab
+        - group_publications_images
+        - group_publications_rel_media_tab
+        - group_publications_locations_tab
+        - group_publications_links_tab
+        - group_publications_rel_cont_tab
+      parent_name: ''
+      weight: 0
+      format_type: tabs
+      format_settings:
+        id: publications_tabs
+        classes: ''
+        direction: horizontal
+      label: Publications
+    group_publications_general_tab:
+      children:
+        - title
+        - field_publications_type
+        - field_publications_date
+        - field_summary
+        - field_publications_highlights
+        - field_body
+      parent_name: group_publications_tabs
+      weight: 2
+      format_type: tab
+      format_settings:
+        id: publications_general_tab
+        classes: ''
+        formatter: open
+        description: ''
+        required_fields: true
+      label: Général
+    group_publications_bib_ref_tab:
+      children:
+        - field_publications_bib_refs
+      parent_name: group_publications_tabs
+      weight: 3
+      format_type: tab
+      format_settings:
+        id: publications_bib_ref_tab
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Référence(s) Bibliographique(s)'
+    group_publications_images:
+      children:
+        - field_publications_square_img
+        - field_publications_vert_image
+        - field_images
+      parent_name: group_publications_tabs
+      weight: 4
+      format_type: tab
+      format_settings:
+        id: publications_images_tab
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Images
+    group_publications_rel_media_tab:
+      children:
+        - field_publications_matter_table
+        - field_documents
+      parent_name: group_publications_tabs
+      weight: 5
+      format_type: tab
+      format_settings:
+        id: publications_rel_media_tab
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Multimedia lié'
+    group_publications_links_tab:
+      children:
+        - field_links
+        - field_tags
+      parent_name: group_publications_tabs
+      weight: 7
+      format_type: tab
+      format_settings:
+        label: 'Liens et Tags'
+        formatter: closed
+        description: ''
+        required_fields: true
+        id: publications_links_tab
+        classes: ''
+      label: 'Liens et Tags'
+    group_publications_locations_tab:
+      children:
+        - field_locations
+      parent_name: group_publications_tabs
+      weight: 6
+      format_type: tab
+      format_settings:
+        id: publications_locations_tab
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Localisation(s)
+    group_publications_rel_cont_tab:
+      children:
+        - field_publications_rel_content
+      parent_name: group_publications_tabs
+      weight: 8
+      format_type: tab
+      format_settings:
+        id: publications_rel_cont_tab
+        classes: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: 'Contenu lié'
+id: node.publications.default
+targetEntityType: node
+bundle: publications
+mode: default
+content:
+  field_body:
+    weight: 6
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_documents:
+    weight: 31
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  field_images:
+    weight: 28
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_links:
+    weight: 32
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_locations:
+    weight: 33
+    settings:
+      html5_geolocation: true
+    third_party_settings: {  }
+    type: geofield_latlon
+  field_publications_bib_refs:
+    weight: 29
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+  field_publications_date:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_publications_highlights:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_publications_matter_table:
+    weight: 30
+    settings:
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: file_generic
+  field_publications_rel_content:
+    weight: 34
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_publications_square_img:
+    weight: 26
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_publications_type:
+    weight: 2
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  field_publications_vert_image:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_summary:
+    weight: 4
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+  field_tags:
+    weight: 33
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+  path:
+    type: path
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  langcode: true
+  promote: true
+  sticky: true
+  uid: true

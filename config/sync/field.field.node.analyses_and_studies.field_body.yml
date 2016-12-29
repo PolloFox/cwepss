@@ -1,0 +1,21 @@
+uuid: eacf6660-fea2-4b6d-8ece-fa68e5e305d2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.analyses_and_studies
+  module:
+    - text
+id: node.analyses_and_studies.field_body
+field_name: field_body
+entity_type: node
+bundle: analyses_and_studies
+label: 'Corps de texte'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

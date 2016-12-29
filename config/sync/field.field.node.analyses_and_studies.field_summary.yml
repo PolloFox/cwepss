@@ -1,0 +1,21 @@
+uuid: 7c346084-3f00-4951-bf8b-5ce6e4d944ac
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.analyses_and_studies
+  module:
+    - text
+id: node.analyses_and_studies.field_summary
+field_name: field_summary
+entity_type: node
+bundle: analyses_and_studies
+label: Résumé
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

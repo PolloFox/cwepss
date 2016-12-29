@@ -1,0 +1,77 @@
+uuid: fa6bd02a-e2ce-4272-b804-f3ccef12a10c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.contact.field_address
+    - field.field.node.contact.field_body
+    - field.field.node.contact.field_content_reference
+    - field.field.node.contact.field_links
+    - field.field.node.contact.field_locations
+    - field.field.node.contact.field_mails
+    - field.field.node.contact.field_phone
+    - node.type.contact
+  module:
+    - address
+    - geofield
+    - link
+    - text
+    - user
+id: node.contact.default
+targetEntityType: node
+bundle: contact
+mode: default
+content:
+  field_address:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+  field_body:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+  field_content_reference:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_links:
+    weight: 107
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_locations:
+    weight: 104
+    label: above
+    settings:
+      output_format: wkt
+    third_party_settings: {  }
+    type: geofield_default
+  field_mails:
+    weight: 106
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_phone:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  links:
+    weight: 100
+hidden:
+  langcode: true

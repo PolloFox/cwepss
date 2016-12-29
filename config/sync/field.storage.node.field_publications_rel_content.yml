@@ -1,0 +1,19 @@
+uuid: 2e80baa5-4d9c-4e4e-995f-6b7c194f006b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_publications_rel_content
+field_name: field_publications_rel_content
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

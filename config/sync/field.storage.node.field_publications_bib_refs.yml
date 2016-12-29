@@ -1,0 +1,20 @@
+uuid: 3aad8f49-0e96-4958-85d4-e54a66660845
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_publications_bib_refs
+field_name: field_publications_bib_refs
+entity_type: node
+type: text
+settings:
+  max_length: 800
+module: text
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

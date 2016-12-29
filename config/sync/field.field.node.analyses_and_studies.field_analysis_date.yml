@@ -1,0 +1,21 @@
+uuid: 68bc42de-d397-46b4-adec-ee9b6c97e554
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_analysis_date
+    - node.type.analyses_and_studies
+  module:
+    - datetime
+id: node.analyses_and_studies.field_analysis_date
+field_name: field_analysis_date
+entity_type: node
+bundle: analyses_and_studies
+label: Date
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

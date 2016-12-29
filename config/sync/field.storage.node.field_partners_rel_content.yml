@@ -1,0 +1,19 @@
+uuid: 26bc52b8-33da-4a7a-8d0d-aece8bc9eb64
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_partners_rel_content
+field_name: field_partners_rel_content
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: 138d62e4-3c3a-4e0f-b3aa-b5663a53af14
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publications_bib_refs
+    - node.type.publications
+  module:
+    - text
+id: node.publications.field_publications_bib_refs
+field_name: field_publications_bib_refs
+entity_type: node
+bundle: publications
+label: Référence(s)
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

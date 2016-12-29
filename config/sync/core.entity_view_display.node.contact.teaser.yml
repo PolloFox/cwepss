@@ -1,0 +1,18 @@
+uuid: 9b9e87e1-66ce-403a-8b2f-d5a5b92e2aea
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.contact
+  module:
+    - user
+id: node.contact.teaser
+targetEntityType: node
+bundle: contact
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden:
+  langcode: true

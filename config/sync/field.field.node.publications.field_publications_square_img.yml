@@ -1,26 +1,26 @@
-uuid: ab764ca0-7054-43b7-bc8d-f6c4e8d7f5c1
+uuid: 4fd485af-0481-4143-8c46-6df3cd4572e9
 langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_images
-    - node.type.article
+    - field.storage.node.field_publications_square_img
+    - node.type.publications
   module:
     - image
-id: node.article.field_images
-field_name: field_images
+id: node.publications.field_publications_square_img
+field_name: field_publications_square_img
 entity_type: node
-bundle: article
-label: Images
+bundle: publications
+label: 'Image carrée'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
-  file_directory: 'articles/images/[date:custom:Y]-[date:custom:m]'
+  file_directory: 'publications/images/square/[date:custom:Y]-[date:custom:m]'
   file_extensions: 'png gif jpg jpeg'
-  max_filesize: 8MB
+  max_filesize: 2MB
   max_resolution: ''
   min_resolution: ''
   alt_field: true

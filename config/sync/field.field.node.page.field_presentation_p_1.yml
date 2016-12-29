@@ -1,0 +1,50 @@
+uuid: ebc16f88-548f-4337-b6f0-febc3c66a739
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_presentation_p_1
+    - node.type.page
+    - paragraphs.paragraphs_type.paragraph_image_text
+    - paragraphs.paragraphs_type.paragraph_text_2_cols
+    - paragraphs.paragraphs_type.paragraph_text_3_cols
+    - paragraphs.paragraphs_type.paragraph_text_only
+    - paragraphs.paragraphs_type.paragraph_video_text
+  module:
+    - entity_reference_revisions
+id: node.page.field_presentation_p_1
+field_name: field_presentation_p_1
+entity_type: node
+bundle: page
+label: Paragraphe
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      paragraph_image_text: paragraph_image_text
+      paragraph_text_2_cols: paragraph_text_2_cols
+      paragraph_text_3_cols: paragraph_text_3_cols
+      paragraph_text_only: paragraph_text_only
+      paragraph_video_text: paragraph_video_text
+    target_bundles_drag_drop:
+      paragraph_image_text:
+        enabled: true
+        weight: 6
+      paragraph_text_2_cols:
+        enabled: true
+        weight: 7
+      paragraph_text_3_cols:
+        enabled: true
+        weight: 8
+      paragraph_text_only:
+        enabled: true
+        weight: 9
+      paragraph_video_text:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

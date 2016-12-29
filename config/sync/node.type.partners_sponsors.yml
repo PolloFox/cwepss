@@ -1,0 +1,18 @@
+uuid: efc732a0-c3bb-4d6e-afd4-c919b91a2d2c
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Partenaires
+type: partners_sponsors
+description: 'Utilisez ce type de contenu pour encoder les <em>partenaires</em>,<em>commanditaires</em>,<em>sponsors,</em>,...'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

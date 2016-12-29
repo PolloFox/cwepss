@@ -1,0 +1,27 @@
+uuid: 92b19fed-6623-4234-b5f4-af197819f437
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publications_matter_table
+    - node.type.publications
+  module:
+    - file
+id: node.publications.field_publications_matter_table
+field_name: field_publications_matter_table
+entity_type: node
+bundle: publications
+label: 'Table des matières'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'publications/documents/table/[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: 1MB
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

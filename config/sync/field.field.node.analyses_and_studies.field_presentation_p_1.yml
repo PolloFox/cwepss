@@ -1,0 +1,50 @@
+uuid: 2d9c051b-50b0-4c74-b6c7-f4391f96f8f5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_presentation_p_1
+    - node.type.analyses_and_studies
+    - paragraphs.paragraphs_type.paragraph_image_text
+    - paragraphs.paragraphs_type.paragraph_text_2_cols
+    - paragraphs.paragraphs_type.paragraph_text_3_cols
+    - paragraphs.paragraphs_type.paragraph_text_only
+    - paragraphs.paragraphs_type.paragraph_video_text
+  module:
+    - entity_reference_revisions
+id: node.analyses_and_studies.field_presentation_p_1
+field_name: field_presentation_p_1
+entity_type: node
+bundle: analyses_and_studies
+label: Paragraphe(s)
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      paragraph_image_text: paragraph_image_text
+      paragraph_text_2_cols: paragraph_text_2_cols
+      paragraph_text_3_cols: paragraph_text_3_cols
+      paragraph_text_only: paragraph_text_only
+      paragraph_video_text: paragraph_video_text
+    target_bundles_drag_drop:
+      paragraph_image_text:
+        enabled: true
+        weight: 6
+      paragraph_text_2_cols:
+        enabled: true
+        weight: 7
+      paragraph_text_3_cols:
+        enabled: true
+        weight: 8
+      paragraph_text_only:
+        enabled: true
+        weight: 9
+      paragraph_video_text:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

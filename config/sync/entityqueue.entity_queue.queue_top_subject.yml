@@ -1,0 +1,27 @@
+uuid: 1ca0a4b7-043e-45c3-9905-5d0eb36565dc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: queue_top_subject
+label: 'Top Sujet'
+handler: simple
+handler_configuration: {  }
+entity_settings:
+  target_type: node
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      analyses_and_studies: analyses_and_studies
+      article: article
+      publications: publications
+    sort:
+      field: title
+    auto_create: false
+    auto_create_bundle: ''
+queue_settings:
+  min_size: 1
+  max_size: 1
+  act_as_queue: true
+  reverse_in_admin: false

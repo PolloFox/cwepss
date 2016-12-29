@@ -1,0 +1,9 @@
+uuid: 8ee2f3ca-8165-42a3-88ed-8155e9d156b8
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Types de publications'
+vid: taxa_publications_types
+description: ''
+hierarchy: 0
+weight: 0

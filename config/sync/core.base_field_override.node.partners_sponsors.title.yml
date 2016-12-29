@@ -1,0 +1,18 @@
+uuid: ac876671-986a-47ac-979d-d650baeae1e6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.partners_sponsors
+id: node.partners_sponsors.title
+field_name: title
+entity_type: node
+bundle: partners_sponsors
+label: Titre
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

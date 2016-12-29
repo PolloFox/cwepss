@@ -1,0 +1,18 @@
+uuid: 3de592d0-06b2-4c44-8df6-86b50029aea6
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Contact
+type: contact
+description: 'Utilisez le type de contenu <em>Contact</em> pour encoder des informations pratiques concernant d''autres types de contenus (articles, événements, pages sponsors,...)'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

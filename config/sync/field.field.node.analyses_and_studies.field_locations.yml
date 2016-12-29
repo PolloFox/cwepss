@@ -1,0 +1,21 @@
+uuid: a8e4bcfc-43d3-4925-906a-2aedd32dda63
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_locations
+    - node.type.analyses_and_studies
+  module:
+    - geofield
+id: node.analyses_and_studies.field_locations
+field_name: field_locations
+entity_type: node
+bundle: analyses_and_studies
+label: Localisations
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

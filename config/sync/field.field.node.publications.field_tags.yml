@@ -1,0 +1,28 @@
+uuid: a3a1db42-1b52-43d7-a3a9-3f7700599c53
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tags
+    - node.type.publications
+    - taxonomy.vocabulary.tags
+id: node.publications.field_tags
+field_name: field_tags
+entity_type: node
+bundle: publications
+label: Tags
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: _none
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,21 @@
+uuid: feb5111f-015c-4b00-b856-b1bdb7dcfe2e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_body
+    - node.type.contact
+  module:
+    - text
+id: node.contact.field_body
+field_name: field_body
+entity_type: node
+bundle: contact
+label: Descriptif
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

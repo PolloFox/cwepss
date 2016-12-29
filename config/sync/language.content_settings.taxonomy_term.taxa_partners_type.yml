@@ -1,0 +1,11 @@
+uuid: 3df0dc6d-8059-4980-b4b9-7d130f2b628d
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.taxa_partners_type
+id: taxonomy_term.taxa_partners_type
+target_entity_type_id: taxonomy_term
+target_bundle: taxa_partners_type
+default_langcode: site_default
+language_alterable: false

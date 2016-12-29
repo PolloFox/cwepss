@@ -1,0 +1,11 @@
+uuid: 6e754891-39a8-4e00-afb3-dd30799547db
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.taxa_publications_types
+id: taxonomy_term.taxa_publications_types
+target_entity_type_id: taxonomy_term
+target_bundle: taxa_publications_types
+default_langcode: site_default
+language_alterable: false

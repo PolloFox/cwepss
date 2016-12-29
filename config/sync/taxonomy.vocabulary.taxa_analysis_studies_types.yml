@@ -1,0 +1,9 @@
+uuid: 898fa2e2-2441-4446-a55d-3bc63f622265
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Types d''analyses et d''études'
+vid: taxa_analysis_studies_types
+description: ''
+hierarchy: 0
+weight: 0
