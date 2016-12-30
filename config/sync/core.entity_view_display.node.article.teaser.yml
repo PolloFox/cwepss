@@ -19,6 +19,7 @@ content:
 hidden:
   field_articles_category: true
   field_articles_event_date: true
+  field_articles_rel_content: true
   field_body: true
   field_documents: true
   field_images: true
