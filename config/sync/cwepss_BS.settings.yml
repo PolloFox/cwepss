@@ -1,17 +1,24 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
-  path: ''
+  path: themes/custom/cwepss_BS/favicon.ico
   url: 'http://cwepss.eu/themes/contrib/bootstrap/favicon.ico'
-  use_default: true
-features:
-  comment_user_picture: true
-  comment_user_verification: true
-  favicon: true
-  node_user_picture: true
-logo:
-  path: ''
-  url: ''
-  use_default: true
+  use_default: 0
 schemas:
   bootstrap: 8000
   cwepss_BS: 8000
+features:
+  comment_user_picture: 1
+  comment_user_verification: 1
+  favicon: 1
+  node_user_picture: 1
+logo:
+  path: themes/custom/cwepss_BS/logo_cwepss.svg
+  url: ''
+  use_default: 0
+cdn_jsdelivr_theme: sandstone
+breadcrumb_home: 1
+navbar_position: fixed-top
+fluid_container: 1
+image_shape: img-circle
+table_responsive: '-1'
+table: ''
