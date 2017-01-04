@@ -11,7 +11,7 @@ _core:
 id: cwepss_BS_help
 theme: cwepss_BS
 region: '-1'
-weight: -5
+weight: -6
 provider: null
 plugin: help_block
 settings:

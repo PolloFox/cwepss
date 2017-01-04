@@ -11,7 +11,7 @@ _core:
 id: cwepss_BS_powered
 theme: cwepss_BS
 region: '-1'
-weight: -1
+weight: -4
 provider: null
 plugin: system_powered_by_block
 settings:
