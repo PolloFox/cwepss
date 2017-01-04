@@ -11,7 +11,7 @@ _core:
 id: cwepss_BS_messages
 theme: cwepss_BS
 region: header
-weight: -50
+weight: -7
 provider: null
 plugin: system_messages_block
 settings:

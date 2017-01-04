@@ -1,6 +1,6 @@
 uuid: 693f97f3-e2b5-460a-bbf9-9fd02f7d773c
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: Cy3vkpYrD1O5JG-BeEnokF0bByHYDEa8CBfWivB4_SQ
 id: cwepss_BS_branding
 theme: cwepss_BS
-region: navigation
-weight: 0
+region: '-1'
+weight: -6
 provider: null
 plugin: system_branding_block
 settings:

@@ -11,7 +11,7 @@ _core:
 id: cwepss_BS_breadcrumbs
 theme: cwepss_BS
 region: header
-weight: -100
+weight: -7
 provider: null
 plugin: system_breadcrumb_block
 settings:

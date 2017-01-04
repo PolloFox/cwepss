@@ -1,6 +1,6 @@
 uuid: 2b17b0bc-a3b3-48e6-b623-5223464f9578
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - search
@@ -10,8 +10,8 @@ _core:
   default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
 id: cwepss_BS_search
 theme: cwepss_BS
-region: sidebar_second
-weight: -1
+region: '-1'
+weight: -3
 provider: null
 plugin: search_form_block
 settings:

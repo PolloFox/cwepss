@@ -1,6 +1,6 @@
 uuid: 7828555f-8d3e-49c7-a6ae-266940b7a544
 langcode: en
-status: true
+status: false
 dependencies:
   module:
     - system
@@ -10,8 +10,8 @@ _core:
   default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
 id: cwepss_BS_powered
 theme: cwepss_BS
-region: footer
-weight: -10
+region: '-1'
+weight: -1
 provider: null
 plugin: system_powered_by_block
 settings:
