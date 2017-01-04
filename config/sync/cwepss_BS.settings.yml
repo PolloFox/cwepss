@@ -1,7 +1,7 @@
 favicon:
   mimetype: image/vnd.microsoft.icon
   path: themes/custom/cwepss_BS/favicon.ico
-  url: 'http://cwepss.eu/themes/contrib/bootstrap/favicon.ico'
+  url: 'http://cwepss/themes/custom/cwepss_BS/favicon.ico'
   use_default: 0
 schemas:
   bootstrap: 8000
@@ -19,6 +19,5 @@ cdn_jsdelivr_theme: sandstone
 breadcrumb_home: 1
 navbar_position: fixed-top
 fluid_container: 1
-image_shape: img-circle
-table_responsive: '-1'
+image_shape: ''
 table: ''
