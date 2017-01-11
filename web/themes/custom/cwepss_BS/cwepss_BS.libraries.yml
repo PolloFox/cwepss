@@ -1,0 +1,10 @@
+cwepss:
+  version: VERSION
+  css:
+    component:
+      css/homepage/asbl.css: {}
+cwepss_fonts:
+  version: VERSION
+  css:
+    theme:
+      'https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic|Patua+One|Yanone+Kaffeesatz': { type: external, minified: true }
