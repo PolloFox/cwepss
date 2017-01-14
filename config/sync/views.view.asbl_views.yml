@@ -6,7 +6,6 @@ dependencies:
     - field.storage.paragraph.field_body
     - field.storage.paragraph.field_paragraph_image
     - field.storage.paragraph.field_paragraph_title
-    - image.style.max_325x325
     - node.type.page
   module:
     - colorbox
@@ -184,7 +183,7 @@ display:
           click_sort_column: target_id
           type: colorbox
           settings:
-            colorbox_node_style: max_325x325
+            colorbox_node_style: ''
             colorbox_node_style_first: ''
             colorbox_image_style: ''
             colorbox_gallery: post
