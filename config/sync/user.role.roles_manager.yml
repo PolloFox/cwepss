@@ -86,3 +86,4 @@ permissions:
   - 'access toolbar'
   - 'access user profiles'
   - 'view the administration theme'
+  - 'administer menu'
