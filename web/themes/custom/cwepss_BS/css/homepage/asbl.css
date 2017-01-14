@@ -6,3 +6,16 @@
 body {
     font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+.cwepss-asbl-paragraph-title h4 {
+    margin-top: 0;
+}
+
+div#collapse-asbl-views div.views-field-field-body {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.cwepss-asbl-paragraph-title {
+    padding-left: 0;
+}
