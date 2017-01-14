@@ -26,4 +26,7 @@ div#collapse-asbl-views div.views-field-field-body {
 
 div#collapse-asbl-views div.views-field-field-paragraph-image img {
     width: 100%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
 }
