@@ -31,11 +31,11 @@
  * @ingroup themeable
  */
 #}
-{% for field in fields -%}
-  {%- if field.wrapper_element -%}
-    <{{ field.wrapper_element }}{{ field.wrapper_attributes }}>
-  {%- endif %}
-    {% if fields.counter.content == '1' %}
+{% if fields.counter.content == '1' %}
+    {% for field in fields -%}
+      {%- if field.wrapper_element -%}
+        <{{ field.wrapper_element }}{{ field.wrapper_attributes }}>
+      {%- endif %}
         {% if field.class == 'field-paragraph-image' and fields.field_paragraph_image.content is not empty %}
             <div class="col-xs-12 col-sm-5 col-md-4">
         {% endif %}
@@ -53,12 +53,11 @@
         {% if field.class == 'field-paragraph-image' and fields.field_paragraph_image.content is not empty %}
             </div>
         {% endif %}
-    {% endif %}
-  {%- if field.wrapper_element -%}
-    </{{ field.wrapper_element }}>
-  {%- endif %}
-{%- endfor %}
-{% if fields.counter.content != '1' %}
+      {%- if field.wrapper_element -%}
+        </{{ field.wrapper_element }}>
+      {%- endif %}
+    {%- endfor %}
+{% else %}
     <div class="panel-heading">
         <h3 class="panel-title"><a href="#collapse-{{ view.id|clean_class }}-{{ fields.counter.content }}" data-toggle="collapse" data-parent="#accordion-{{ view.id|clean_class }}-{{ fields.counter.content }}" >{{ fields.field_paragraph_title.content }}</a></h3>
     </div>
