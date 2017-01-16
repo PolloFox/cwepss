@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.paragraph.paragraph_image_text.field_body
     - field.field.paragraph.paragraph_image_text.field_paragraph_image
+    - field.field.paragraph.paragraph_image_text.field_paragraph_link
     - field.field.paragraph.paragraph_image_text.field_paragraph_title
     - image.style.thumbnail
     - paragraphs.paragraphs_type.paragraph_image_text
   module:
     - image
+    - link
     - text
 id: paragraph.paragraph_image_text.default
 targetEntityType: paragraph
@@ -30,6 +32,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+  field_paragraph_link:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
   field_paragraph_title:
     weight: 1
     settings:

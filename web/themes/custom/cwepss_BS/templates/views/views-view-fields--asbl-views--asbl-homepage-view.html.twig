@@ -31,92 +31,41 @@
  * @ingroup themeable
  */
 #}
+
 {% for field in fields -%}
-  {%- if field.wrapper_attributes.class[1] is not empty %}
-    {%- if field.wrapper_attributes.class[1] == 'views-field-title' %}
-      <div class="panel-heading">
-        {{ field.separator }}
-        {%- if field.wrapper_element -%}
-          <{{ field.wrapper_element }}{{ field.wrapper_attributes }}>
-        {%- endif %}
-        {%- if field.label -%}
-          {%- if field.label_element -%}
-            <{{ field.label_element }}{{ field.label_attributes }}>{{ field.label }}{{ field.label_suffix }}</{{ field.label_element }}>
-          {%- else -%}
-            {{ field.label }}{{ field.label_suffix }}
-          {%- endif %}
-        {%- endif %}
-        {%- if field.element_type -%}
-          <{{ field.element_type }}{{ field.element_attributes }}>
-            <h3 class="panel-title">
-              <a href="#collapse-{{ view.id|clean_class }}" data-toggle="collapse" data-parent="#accordion-{{ view.id|clean_class }}" >
-                {{ field.content }}
-              </a>
-            </h3>
-          </{{ field.element_type }}>
-        {%- else -%}
-          <h3 class="panel-title">
-            <a href="#collapse-{{ view.id|clean_class }}" data-toggle="collapse" data-parent="#accordion-{{ view.id|clean_class }}" >
-              {{ field.content }}
-            </a>
-          </h3>
-        {%- endif %}
-        {%- if field.wrapper_element -%}
-          </{{ field.wrapper_element }}>
-        {%- endif %}
-      </div>
-    {%- else -%}
-      {%- if loop.index == 2 %}
-      <div id="collapse-{{ view.id|clean_class }}" class="panel-collapse collapse in">
-        <div class="panel-body">
-          <div class="row">
-            <div class="col-xs-12 col-sm-5 col-md-4">
-      {%- endif  %}
-      {%- if loop.index == 3 %}
-            <div class="col-xs-12 col-sm-7 col-md-8 cwepss-asbl-paragraph-title">
-      {%- endif %}
-          {{ field.separator }}
-          {%- if field.wrapper_element -%}
-            <{{ field.wrapper_element }}{{ field.wrapper_attributes }}>
-          {%- endif %}
-          {%- if field.label -%}
-            {%- if field.label_element -%}
-              <{{ field.label_element }}{{ field.label_attributes }}>{{ field.label }}{{ field.label_suffix }}</{{ field.label_element }}>
-            {%- else -%}
-              {{ field.label }}{{ field.label_suffix }}
-            {%- endif %}
-          {%- endif %}
-          {%- if field.element_type -%}
-              {%- if loop.index == 3 %}
-                <h4>
-              {%- endif %}
-              <{{ field.element_type }}{{ field.element_attributes }}>{{ field.content }}</{{ field.element_type }}>
-              {%- if loop.index == 3 %}
-                </h4>
-              {%- endif %}
-          {%- else -%}
-              {%- if loop.index == 3 %}
-                <h4>
-              {%- endif %}
-              {{ field.content }}
-              {%- if loop.index == 3 %}
-                </h4>
-              {%- endif %}
-          {%- endif %}
-          {%- if field.wrapper_element -%}
-            </{{ field.wrapper_element }}>
-          {%- endif %}
-      {%- if loop.index == 2 %}
+  {% set displayField = true %}
+  {%- if field.wrapper_element -%}
+    <{{ field.wrapper_element }}{{ field.wrapper_attributes }}>
+  {%- endif %}
+    {% if field.class == 'field-paragraph-image' %}
+      <div class="col-xs-12 {% if fields.counter.content == '1' and fields.field_paragraph_image.content is not empty %}col-sm-5{% endif %}">
+    {% endif %}
+    {% if field.class == 'field-paragraph-title'%}
+        {% if fields.counter.content != '1' %}
+            {% set displayField = false %}
+            <div class="panel-heading">
+                <h3 class="panel-title"><a href="#collapse-{{ view.id|clean_class }}-{{ fields.counter.content }}" data-toggle="collapse" data-parent="#accordion-{{ view.id|clean_class }}-{{ fields.counter.content }}" >{{ field.content }}</a></h3>
             </div>
-      {%- endif %}
-      {%- if loop.index == 3 %}
-            </div>
-      {%- endif %}
-      {%- if loop.last %}
-          </div>
+        {% else %}
+            <div class="col-xs-12 {% if fields.counter.content == '1' and fields.field_paragraph_image.content is not empty %}col-sm-7{% endif %}">
+        {% endif %}
+    {% endif %}
+    {% if (field.class == 'field-body' or field.class == 'field-paragraph-link') and fields.counter.content != '1' %}
+        <div class="col-xs-12">
+    {% endif %}
+        {% if displayField %}
+            {% include 'themes/custom/cwepss_BS/templates/partials/views-view-field-content.html.twig' with { 'field': field, 'rownum': fields.counter.content } %}
+        {% endif %}
+    {% if (field.class == 'field-body' or field.class == 'field-paragraph-link') and fields.counter.content != '1' %}
         </div>
+    {% endif %}
+    {% if field.class == 'field-paragraph-title' and fields.counter.content == '1' %}
+        </div>
+    {% endif %}
+    {% if field.class == 'field-paragraph-image' %}
       </div>
-      {%- endif %}
-    {%- endif %}
+    {% endif %}
+  {%- if field.wrapper_element -%}
+    </{{ field.wrapper_element }}>
   {%- endif %}
 {%- endfor %}

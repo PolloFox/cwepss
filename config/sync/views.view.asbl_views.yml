@@ -5,10 +5,12 @@ dependencies:
   config:
     - field.storage.paragraph.field_body
     - field.storage.paragraph.field_paragraph_image
+    - field.storage.paragraph.field_paragraph_link
     - field.storage.paragraph.field_paragraph_title
     - node.type.page
   module:
     - colorbox
+    - link
     - node
     - paragraphs
     - text
@@ -56,12 +58,16 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 1
+          items_per_page: 4
           offset: 0
       style:
         type: default
         options:
-          grouping: {  }
+          grouping:
+            -
+              field: title
+              rendered: true
+              rendered_strip: false
           row_class: ''
           default_row_class: true
       row:
@@ -75,7 +81,7 @@ display:
           group_type: group
           admin_label: ''
           label: ''
-          exclude: false
+          exclude: true
           alter:
             alter_text: false
             text: ''
@@ -177,7 +183,7 @@ display:
           element_wrapper_class: ''
           element_default_classes: true
           empty: ''
-          hide_empty: false
+          hide_empty: true
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
@@ -326,6 +332,123 @@ display:
           separator: ', '
           field_api_classes: false
           plugin_id: field
+        field_paragraph_link:
+          id: field_paragraph_link
+          table: paragraph__field_paragraph_link
+          field: field_paragraph_link
+          relationship: field_presentation_p_1
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: true
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: uri
+          type: link
+          settings:
+            trim_length: 80
+            url_only: false
+            url_plain: false
+            rel: '0'
+            target: '0'
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
+        counter:
+          id: counter
+          table: views
+          field: counter
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: true
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: true
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: hidden
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          counter_start: 1
+          plugin_id: counter
       filters:
         status:
           value: '1'
@@ -413,7 +536,7 @@ display:
           relationship: none
           group_type: group
           admin_label: Paragraphes
-          required: false
+          required: true
           plugin_id: standard
       arguments: {  }
       display_extenders: {  }
@@ -427,6 +550,7 @@ display:
       tags:
         - 'config:field.storage.paragraph.field_body'
         - 'config:field.storage.paragraph.field_paragraph_image'
+        - 'config:field.storage.paragraph.field_paragraph_link'
         - 'config:field.storage.paragraph.field_paragraph_title'
   asbl_homepage_view:
     display_plugin: page
@@ -447,4 +571,5 @@ display:
       tags:
         - 'config:field.storage.paragraph.field_body'
         - 'config:field.storage.paragraph.field_paragraph_image'
+        - 'config:field.storage.paragraph.field_paragraph_link'
         - 'config:field.storage.paragraph.field_paragraph_title'

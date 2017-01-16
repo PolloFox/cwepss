@@ -1,0 +1,23 @@
+uuid: 8a5b4f2e-ba54-4ddc-8ea7-e6efd62e40a0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_paragraph_link
+    - paragraphs.paragraphs_type.paragraph_image_text
+  module:
+    - link
+id: paragraph.paragraph_image_text.field_paragraph_link
+field_name: field_paragraph_link
+entity_type: paragraph
+bundle: paragraph_image_text
+label: 'Lien vers le contenu'
+description: 'Lien vers le contenu concerné. En règle générale, il s''agit d''un contenu interne, mais peut concerner un contenu externe aussi'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link
