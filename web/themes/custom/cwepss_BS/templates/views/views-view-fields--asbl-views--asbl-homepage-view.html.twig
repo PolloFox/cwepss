@@ -63,7 +63,7 @@
     {%- endfor %}
 {% else %}
     <div class="panel-heading">
-        <h3 class="panel-title"><a href="#collapse-{{ view.id|clean_class }}-{{ fields.counter.content }}" data-toggle="collapse" data-parent="#accordion-{{ view.id|clean_class }}-{{ fields.counter.content }}" >{{ fields.field_paragraph_title.content }}</a></h3>
+        <h3 class="panel-title"><a href="#collapse-{{ view.id|clean_class }}-{{ fields.counter.content }}" data-toggle="collapse" data-parent="#accordion-{{ view.id|clean_class }}-{{ fields.counter.content }}" >{{ fields.field_paragraph_title.content }}<span class="cwepss-open-icon glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span></a></h3>
     </div>
     <div id="collapse-{{ view.id|clean_class }}-{{ fields.counter.content }}" class="panel-collapse collapse in">
         <div class="panel-body">

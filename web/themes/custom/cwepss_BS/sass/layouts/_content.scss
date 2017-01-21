@@ -12,6 +12,40 @@
   }
 }
 
+.cwepss-asbl-picture-icon {
+  margin-right: 1rem;
+}
+
+.cwepss-open-icon {
+  padding-top:.5rem;
+}
+
+.panel-group {
+  @include box-shadow(0 3px 6px rgba(0,0,0,.175));
+
+  &:hover {
+    border-color: $linedgray;
+    @include box-shadow(0 3px 6px rgba(55,58,60,.35));
+  }
+}
+
+.panel-heading {
+  background-color: $darkgrey;
+  margin-left: -1px;
+  margin-right: -1px;
+}
+
+.panel-title {
+  a,
+  a:hover {
+    text-decoration: none;
+    color: $white;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
+}
+
 #collapse-asbl-views {
 
   .row:first-child {
