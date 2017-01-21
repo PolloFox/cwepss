@@ -1,0 +1,39 @@
+{
+  "name": "cwepss",
+  "version": "1.0.0",
+  "description": "Cwepss corporate website",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PolloFox/cwepss.git"
+  },
+  "author": "Paul-André Duchesne",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/PolloFox/cwepss.git/issues"
+  },
+  "homepage": "https://github.com/PolloFox/cwepss.git#readme",
+  "devDependencies": {
+    "bower": "^1.7.9",
+    "del": "^2.2",
+    "gulp": "^3.9",
+    "gulp-clean-css": "^2.0",
+    "gulp-concat": "^2.6",
+    "gulp-if": "^2.0",
+    "gulp-load-plugins": "^1.2",
+    "gulp-plumber": "^1.1",
+    "gulp-rev": "^7.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6",
+    "gulp-uglify": "^2.0",
+    "gulp-util": "^3.0",
+    "node-sass": "^3.8.0",
+    "q": "^1.4"
+  }
+}

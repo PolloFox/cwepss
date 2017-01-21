@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+// Grid breakpoints coming from Bootstrap
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 544px,
+        md: 768px,
+        mlg: 842px,
+        lmlg: 878px,
+        xlmlg: 910px,
+        blg: 958px,
+        lg: 992px,
+        lgsm: 1022px,
+        lgmd: 1070px,
+        lglg: 1118px,
+        lgxl: 1198px,
+        xl: 1200px,
+        xxl: 1280px,
+        xxxl: 1446px,
+        xlxl: 1550px,
+        xxlxl: 1654px,
+        xxxlxl: 1840px
+) !default;

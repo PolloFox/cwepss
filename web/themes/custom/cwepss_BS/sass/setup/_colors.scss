@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+// Colors
+//
+// Grayscale and brand colors coming from Bootstrap.
+
+$gray-dark:                 #373a3c !default;
+$gray:                      #55595c !default;
+$gray-light:                #818a91 !default;
+$gray-lighter:              #eceeef !default;
+$gray-lightest:             #f7f7f9 !default;
+
+$brand-primary:             #0275d8 !default;
+$brand-success:             #5cb85c !default;
+$brand-info:                #5bc0de !default;
+$brand-warning:             #f0ad4e !default;
+$brand-danger:              #d9534f !default;
+$brand-inverse:             $gray-dark !default;
+
+// RBINS Color
+
+$white: #fff;
+$black: #000;
+$darkgrey: $gray-dark;
+$linedgray: #c8c8c8;
+$lightgrey: $gray-lightest;
+$graylight1: #f8f8f8;
+$graylight2: #e7e7e7;
+$orange: #ffa500;
+$orange-dark: #ff8d16;
+$error-background: #f2dede;
+$error-border: #ebcccc;
+$error-text: #a94442;

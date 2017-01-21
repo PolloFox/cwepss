@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+// Setup files
+@import 'setup/colors';
+@import 'setup/fonts';
+@import 'setup/breakpoints';
+
+// Mixins
+@import 'mixins/breakpoints';
+@import 'mixins/border-radius';
+@import 'mixins/transitions';
+@import 'mixins/box-shadow.scss';
+
+// Layout files
+
+@import 'layouts/images';
+@import 'layouts/navigation';
+@import 'layouts/headers';
+@import 'layouts/content';
+@import 'layouts/forms';
+@import 'layouts/login';
+
+
+// Module files
+@import 'modules/base';
+@import 'modules/navigation';
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: "PT Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: $font-size-root;
+}
+
+div.card {
+  @include box-shadow(0 6px 12px rgba(0,0,0,.175));
+
+  &:hover {
+    border-color: $linedgray;
+    @include box-shadow(0 6px 12px rgba(55,58,60,.35));
+  }
+}

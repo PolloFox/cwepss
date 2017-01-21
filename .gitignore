@@ -20,3 +20,6 @@ web/sites/*/development.services.yml
 # Ignore swp file
 *.swp
 console
+# Ignore node modules
+node_modules
+node_modules/*

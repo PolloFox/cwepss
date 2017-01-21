@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+#return-to-top {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  @include border-radius(35px);
+  display: none;
+  @include transition(all 0.3s ease);
+}
+#return-to-top i {
+  color: $white;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  @include transition(all 0.3s ease);
+}
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+  color: $white;
+  top: 5px;
+}

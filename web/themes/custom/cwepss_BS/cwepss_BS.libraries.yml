@@ -2,7 +2,7 @@ cwepss:
   version: VERSION
   css:
     component:
-      css/homepage/asbl.css: {}
+      css/cwepss.css: {}
 cwepss_fonts:
   version: VERSION
   css:
