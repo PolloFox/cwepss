@@ -2,7 +2,6 @@
 
 .views-field-field-paragraph-image,
 .field-paragraph-image {
-
   img {
     width: 100%;
     @include border-radius(5px);
@@ -20,9 +19,18 @@
     font-weight: bold;
   }
 
-  .views-field-field-body {
+  .views-field-field-body,
+  .views-field-field-paragraph-link,
+  .field-paragraph-link {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  .views-field-field-paragraph-link,
+  .field-paragraph-link {
+    a {
+      float:right;
+    }
   }
 
   @media only screen and (min-width : 768px) {
