@@ -9,22 +9,27 @@
   }
 }
 
-.cwepss-asbl-paragraph-title h4 {
-  margin-top: 0;
-  font-weight: bold;
-}
+#collapse-asbl-views {
 
-/*
+  .row:first-child {
+    margin-bottom: 1rem;
+  }
 
-@media only screen and (min-width : 768px) {
-    .cwepss-asbl-paragraph-title {
-        padding-left: 0;
-    }
-}
+  .cwepss-asbl-paragraph-title h4 {
+    margin-top: 0;
+    font-weight: bold;
+  }
 
-div#collapse-asbl-views div.views-field-field-body {
+  .views-field-field-body {
     padding-left: 15px;
     padding-right: 15px;
+  }
+
+  @media only screen and (min-width : 768px) {
+    .cwepss-asbl-paragraph-title {
+      padding-left: 0;
+    }
+  }
+
 }
 
-*/
