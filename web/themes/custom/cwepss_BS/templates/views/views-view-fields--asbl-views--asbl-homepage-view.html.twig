@@ -40,13 +40,17 @@
             <div class="col-xs-12 col-sm-5 col-md-4">
         {% endif %}
         {% if field.class == 'field-paragraph-title'%}
-            <div class="col-xs-12 {% if fields.field_paragraph_image.content is not empty %}col-sm-7 col-md-8{% endif %}">
+            <div class="col-xs-12 {% if fields.field_paragraph_image.content is not empty %}col-sm-7 col-md-8{% endif %} cwepss-asbl-paragraph-title">
         {% endif %}
+            {% if field.class != 'field-paragraph-title' %}
                 {%- if field.element_type -%}
                     <{{ field.element_type }}{{ field.element_attributes }}>{{ field.content }}</{{ field.element_type }}>
                 {%- else -%}
                     {{ field.content }}
                 {%- endif %}
+            {% else %}
+                <h4>{{ field.content }}</h4>
+            {% endif %}
         {% if field.class == 'field-paragraph-title' and fields.counter.content == '1' %}
             </div>
         {% endif %}
