@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+.views-field-field-paragraph-image,
+.field-paragraph-image {
+
+  img {
+    width: 100%;
+    @include border-radius(5px);
+  }
+}
+
 /*
 .cwepss-asbl-paragraph-title h4 {
     margin-top: 0;
@@ -18,10 +27,4 @@ div#collapse-asbl-views div.views-field-field-body {
     padding-right: 15px;
 }
 
-div#collapse-asbl-views div.views-field-field-paragraph-image img {
-    width: 100%;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-}
 */

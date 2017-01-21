@@ -65,16 +65,16 @@
         <div class="panel-body">
             <div class="row">
                 {% if fields.field_paragraph_image.content is not empty %}
-                    <div class="col-xs-4">{{ fields.field_paragraph_image.content }}</div>
+                    <div class="col-xs-4 {{ fields.field_paragraph_image.class }}">{{ fields.field_paragraph_image.content }}</div>
                     <div class="col-xs-8">
                         <div class="row">
-                            <div class="col-xs-12">{{ fields.field_body.content }}</div>
-                            <div class="col-xs-12">{{ fields.field_paragraph_link.content }}</div>
+                            <div class="col-xs-12 {{ fields.field_body.class }}">{{ fields.field_body.content }}</div>
+                            <div class="col-xs-12 {{ fields.field_paragraph_link.class }}">{{ fields.field_paragraph_link.content }}</div>
                         </div>
                     </div>
                 {% else %}
-                    <div class="col-xs-12">{{ fields.field_body.content }}</div>
-                    <div class="col-xs-12">{{ fields.field_paragraph_link.content }}</div>
+                    <div class="col-xs-12 {{ fields.field_body.class }}">{{ fields.field_body.content }}</div>
+                    <div class="col-xs-12 {{ fields.field_paragraph_link.class }}">{{ fields.field_paragraph_link.content }}</div>
                 {% endif %}
             </div>
         </div>
