@@ -2,6 +2,10 @@
 
 .views-field-field-paragraph-image,
 .field-paragraph-image {
+  @include media-breakpoint-down(sm) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
   img {
     width: 100%;
     @include border-radius(5px);
@@ -17,13 +21,36 @@
   .cwepss-asbl-paragraph-title h4 {
     margin-top: 0;
     font-weight: bold;
+    @include media-breakpoint-down(sm) {
+      margin-top: 1rem;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   .views-field-field-body,
-  .views-field-field-paragraph-link,
-  .field-paragraph-link {
+  .views-field-field-body p {
     padding-left: 15px;
     padding-right: 15px;
+    text-align: justify;
+    @include media-breakpoint-down(sm) {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+
+  .field-paragraph-link{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .views-field-field-paragraph-link {
+    padding-left:22px;
+    padding-right: 22px;
+  }
+
+  .field-body {
+    text-align: justify;
   }
 
   .views-field-field-paragraph-link,
