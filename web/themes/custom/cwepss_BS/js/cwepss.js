@@ -10,9 +10,9 @@
             $('a.accordion-open-close').on(
                 'click',
                 function(event) {
-                    var arrowCurrentClass = ($(this).find('span.glyphicon').hasClass('glyphicon-menu-down'))?'glyphicon-menu-down':'glyphicon-menu-up';
-                    var arrowTargetClass = ($(this).find('span.glyphicon').hasClass('glyphicon-menu-down'))?'glyphicon-menu-up':'glyphicon-menu-down';
-                    $(this).find('span.glyphicon').removeClass(arrowCurrentClass).addClass(arrowTargetClass);
+                    var arrowCurrentClass = ($(this).find('span.glyphicon:last-child').hasClass('glyphicon-menu-down'))?'glyphicon-menu-down':'glyphicon-menu-up';
+                    var arrowTargetClass = ($(this).find('span.glyphicon:last-child').hasClass('glyphicon-menu-down'))?'glyphicon-menu-up':'glyphicon-menu-down';
+                    $(this).find('span.glyphicon:last-child').removeClass(arrowCurrentClass).addClass(arrowTargetClass);
                 }
             );
         }
