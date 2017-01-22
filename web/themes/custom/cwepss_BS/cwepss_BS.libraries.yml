@@ -3,6 +3,10 @@ cwepss:
   css:
     component:
       css/cwepss.css: {}
+  js:
+    js/cwepss.js: {}
+  dependencies:
+      - core/jquery
 cwepss_fonts:
   version: VERSION
   css:

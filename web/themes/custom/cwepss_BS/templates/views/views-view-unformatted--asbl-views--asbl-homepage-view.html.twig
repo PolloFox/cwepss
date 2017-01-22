@@ -19,7 +19,7 @@
 #}
 {% if title %}
   <div class="panel-heading">
-    <h3 class="panel-title"><a href="#collapse-{{ view.id|clean_class }}" data-toggle="collapse" data-parent="#accordion-{{ view.id|clean_class }}" ><span class=" cwepss-asbl-picture-icon glyphicon glyphicon-picture" aria-hidden="true"></span>{{ title }}<span class="cwepss-open-icon glyphicon glyphicon-menu-down pull-right" aria-hidden="true"></span></a></h3>
+    <h3 class="panel-title"><a class="accordion-open-close" href="#collapse-{{ view.id|clean_class }}" data-toggle="collapse" data-parent="#accordion-{{ view.id|clean_class }}" ><span class=" cwepss-asbl-picture-icon glyphicon glyphicon-picture" aria-hidden="true"></span>{{ title }}<span class="cwepss-open-icon glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span></a></h3>
   </div>
 {% endif %}
 {% for row in rows %}
