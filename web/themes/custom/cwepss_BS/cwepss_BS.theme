@@ -1,2 +1,6 @@
 <?php
 
+function cwepss_BS_preprocess_views_view_fields(&$variables) {
+    $path_alias = \Drupal::service('path.alias_manager')->getAliasByPath('/node/'.$variables['row']->nid);
+    $variables['path_alias'] = $path_alias;
+}

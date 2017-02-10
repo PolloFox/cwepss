@@ -1,0 +1,58 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if view.title %}
+    <div class="panel-heading">
+        <h3 class="panel-title"><a class="accordion-open-close" href="#collapse-{{ view.id|clean_class }}" data-toggle="collapse" data-parent="#accordion-{{ view.id|clean_class }}" ><span class=" cwepss-picture-icon glyphicon glyphicon-edit" aria-hidden="true"></span>{{ view.title }}<span class="cwepss-open-icon glyphicon glyphicon-menu-up pull-right" aria-hidden="true"></span></a></h3>
+    </div>
+{% endif %}
+{% for row in rows %}
+    {%
+    set row_classes = [
+    default_row_class ? 'views-row',
+    ]
+    %}
+    {% if loop.first %}
+        <div id="collapse-{{ view.id|clean_class }}" class="panel-collapse collapse in">
+        <div class="panel-body">
+    {% endif %}
+    {% if loop.first or loop.index == 2 %}
+    <div class="row">
+    {% endif %}
+    {% if loop.index > 1 %}
+    <div class="col-xs-12 {% if (rows|length) == 4 %}{% if loop.last %}col-md-12 col-lg-4{% else %}col-md-6 col-lg-4{% endif %}{% elseif (rows|length) == 3 %}col-md-6{% endif %}">
+    <div class="panel-group" id="accordion-{{ view.id|clean_class }}-{{ loop.index }}">
+    <div class="panel panel-default">
+    {% endif %}
+    <div{{ row.attributes.addClass(row_classes) }}>
+        {{ row.content }}
+    </div>
+    {% if loop.index > 1 %}
+    </div>
+    </div>
+    </div>
+    {% endif %}
+    {% if loop.first or loop.last %}
+    </div>
+    {% endif %}
+    {% if loop.last %}
+        </div>
+        </div>
+    {% endif %}
+{% endfor %}

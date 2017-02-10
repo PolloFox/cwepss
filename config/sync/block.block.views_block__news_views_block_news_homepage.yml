@@ -1,0 +1,30 @@
+uuid: c57062bf-5b0d-4639-a7f7-6a68bf02b36f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.news_views
+  module:
+    - system
+    - views
+  theme:
+    - cwepss_BS
+id: views_block__news_views_block_news_homepage
+theme: cwepss_BS
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:news_views-block_news_homepage'
+settings:
+  id: 'views_block:news_views-block_news_homepage'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: '3'
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
