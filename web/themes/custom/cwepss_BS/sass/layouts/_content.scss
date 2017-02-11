@@ -144,10 +144,6 @@
         margin-right: -5px;
         background-color: $darkgrey;
 
-        @include media-breakpoint-up(lg) {
-          width: 102%;
-        }
-
         a {
           width: 100%;
           display: inline-block;
