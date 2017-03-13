@@ -38,7 +38,8 @@
         "drupal/address": "^1.0@RC",
         "drupal/entityqueue": "^1.0@alpha",
         "drupal/ds": "^2.6",
-        "drupal/bootstrap_layouts": "^4.1"
+        "drupal/bootstrap_layouts": "^4.1",
+        "drupal/bootstrap_library": "^1.8"
     },
     "require-dev": {
         "behat/mink": "~1.7",

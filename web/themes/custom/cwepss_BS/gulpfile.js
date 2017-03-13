@@ -6,9 +6,7 @@ var Q = require('q');
 var config = {
     assetsDir: '.',
     sassPattern: 'sass/**/*.scss',
-/*
-    bowerDir: 'vendor/bower_components',
-*/
+    bowerDir: '/srv/websites/cwepss/vendor/bower_components',
     revManifestPath: './rev-manifest.json'
 };
 var app = {};
@@ -143,6 +141,15 @@ gulp.task('ui-images', function() {
 });
 
 */
+
+gulp.task('bootstrap', function() {
+    return app.copy(
+        config.bowerDir+'/bootstrap/dist/*/*',
+        '/srv/websites/cwepss/web/libraries/bootstrap'
+    );
+});
+
+
 gulp.task('clean', function() {
     del.sync(config.revManifestPath);
     del.sync('css/*');
