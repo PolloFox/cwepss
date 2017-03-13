@@ -77,22 +77,30 @@
             </div>
           {% endif %}
 
-          {% if pager %}
-            {{ pager }}
-          {% endif %}
-          {% if attachment_after %}
-            <div class="attachment attachment-after">
-              {{ attachment_after }}
-            </div>
-          {% endif %}
-          {% if more %}
-            {{ more }}
-          {% endif %}
-          {% if footer %}
-            <div class="view-footer">
-              {{ footer }}
-            </div>
-          {% endif %}
+            {% block view_pager %}
+              {% if pager %}
+                {{ pager }}
+              {% endif %}
+            {% endblock %}
+            {% block view_attachement_after %}
+              {% if attachment_after %}
+                <div class="attachment attachment-after">
+                  {{ attachment_after }}
+                </div>
+              {% endif %}
+            {% endblock %}
+            {% block view_more %}
+                {% if more %}
+                    {{ more }}
+                {% endif %}
+            {% endblock %}
+            {% block view_footer %}
+                {% if footer %}
+                    <div class="view-footer">
+                      {{ footer }}
+                    </div>
+                {% endif %}
+            {% endblock %}
           {% if feed_icons %}
             <div class="feed-icons">
               {{ feed_icons }}
