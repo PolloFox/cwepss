@@ -1,2 +1,9 @@
 {% extends '_views-view-generic.html.twig' %}
+{% block content_footer %}
+    {% if footer %}
+        <div class="panel-footer" id="homepage-actus-footer">
+            {{ footer }}
+        </div>
+    {% endif %}
+{% endblock %}
 {% block view_footer %}{% endblock %}

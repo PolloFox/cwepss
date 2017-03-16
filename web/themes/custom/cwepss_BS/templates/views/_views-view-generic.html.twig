@@ -70,6 +70,14 @@
           {% if rows %}
             <div class="view-content">
               {{ rows }}
+                {% block content_pager %}
+                {% endblock %}
+                {% block content_attachement_after %}
+                {% endblock %}
+                {% block content_more %}
+                {% endblock %}
+                {% block content_footer %}
+                {% endblock %}
             </div>
           {% elseif empty %}
             <div class="view-empty">
