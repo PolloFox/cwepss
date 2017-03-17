@@ -1,0 +1,52 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a view of unformatted rows.
+ *
+ * Available variables:
+ * - title: The title of this group of rows. May be empty.
+ * - rows: A list of the view's row items.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's content.
+ * - view: The view object.
+ * - default_row_class: A flag indicating whether default classes should be
+ *   used on rows.
+ *
+ * @see template_preprocess_views_view_unformatted()
+ *
+ * @ingroup themeable
+ */
+#}
+{% for row in rows %}
+  {%
+    set row_classes = [
+      default_row_class ? 'views-row',
+    ]
+  %}
+  {% if loop.first %}
+      <div class="panel-body">
+          <div class="row">
+  {% endif %}
+            <div class="col-xs-12 col-lg-6">
+                <div class="panel-group" id="accordion-{{ view.id|clean_class }}-{{ loop.index }}">
+                    <div class="panel panel-default">
+                        {% if title %}
+                            <div class="panel-heading">
+                                <h3 class="panel-title"><a href="#"><span class="cwepss-picture-icon glyphicon glyphicon-edit" aria-hidden="true"></span>{{ title }}</a></h3>
+                            </div>
+                        {% endif %}
+                            <div class="panel-body">
+                                <div{{ row.attributes.addClass(row_classes) }}>
+                                    {{ row.content }}
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+  {% if loop.last %}
+          </div>
+      </div>
+  {% endif %}
+{% endfor %}
+{#
+#}

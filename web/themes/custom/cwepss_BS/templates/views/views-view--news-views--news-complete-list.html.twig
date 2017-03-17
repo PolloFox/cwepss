@@ -1,0 +1,10 @@
+{% extends '_views-view-generic.html.twig' %}
+{% block content_pager %}
+    <div class="panel-footer" id="news-list-footer">
+        {% if pager %}
+            {{ pager }}
+        {% endif %}
+    </div>
+{% endblock %}
+{% block view_pager %}{% endblock %}
+{% block view_footer %}{% endblock %}

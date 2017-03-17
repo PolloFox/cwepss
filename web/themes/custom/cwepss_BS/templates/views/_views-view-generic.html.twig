@@ -51,25 +51,36 @@
             {{ title }}
           {% endif %}
           {{ title_suffix }}
-          {% if header %}
-            <div class="view-header">
-              {{ header }}
-            </div>
-          {% endif %}
-          {% if exposed %}
-            <div class="view-filters form-group">
-              {{ exposed }}
-            </div>
-          {% endif %}
-          {% if attachment_before %}
-            <div class="attachment attachment-before">
-              {{ attachment_before }}
-            </div>
-          {% endif %}
-
+            {% block view_header %}
+                {% if header %}
+                    <div class="view-header">
+                        {{ header }}
+                    </div>
+                {% endif %}
+            {% endblock %}
+            {% block view_exposed %}
+                {% if exposed %}
+                    <div class="view-filters form-group">
+                        {{ exposed }}
+                    </div>
+                {% endif %}
+            {% endblock %}
+            {% block view_attachment_before %}
+                {% if attachment_before %}
+                    <div class="attachment attachment-before">
+                        {{ attachment_before }}
+                    </div>
+                {% endif %}
+            {% endblock %}
           {% if rows %}
             <div class="view-content">
               {{ rows }}
+                {% block content_header %}
+                {% endblock %}
+                {% block content_exposed %}
+                {% endblock %}
+                {% block content_attachment_before %}
+                {% endblock %}
                 {% block content_pager %}
                 {% endblock %}
                 {% block content_attachement_after %}
