@@ -256,6 +256,22 @@ ol.breadcrumb {
   }
 }
 
+
+.views-news-list-row {
+  display: flex;
+  margin-bottom: 1.5rem;
+
+  .views-news-list-col {
+    flex: 1 1 auto;
+    display: flex;
+
+    .panel {
+      height:100%;
+    }
+  }
+}
+
+
 #homepage-actus-footer {
   text-align: center;
   a {
