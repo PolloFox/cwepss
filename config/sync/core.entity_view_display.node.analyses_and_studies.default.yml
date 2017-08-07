@@ -39,6 +39,7 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
   field_analysis_rel_content:
     weight: 112
     label: above
@@ -46,6 +47,7 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
   field_analysis_types:
     weight: 101
     label: above
@@ -53,18 +55,21 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
   field_body:
     weight: 103
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
   field_documents:
     weight: 107
     label: above
     settings: {  }
     third_party_settings: {  }
     type: file_default
+    region: content
   field_images:
     weight: 106
     label: above
@@ -73,6 +78,7 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
   field_links:
     weight: 109
     label: above
@@ -84,6 +90,7 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
   field_locations:
     weight: 110
     label: above
@@ -91,6 +98,7 @@ content:
       output_format: wkt
     third_party_settings: {  }
     type: geofield_default
+    region: content
   field_presentation_p_1:
     weight: 104
     label: above
@@ -99,12 +107,14 @@ content:
       link: ''
     third_party_settings: {  }
     type: entity_reference_revisions_entity_view
+    region: content
   field_summary:
     weight: 102
     label: above
     settings: {  }
     third_party_settings: {  }
     type: text_default
+    region: content
   field_tags:
     weight: 111
     label: above
@@ -112,6 +122,7 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
+    region: content
   field_videos:
     weight: 108
     label: above
@@ -122,7 +133,9 @@ content:
       autoplay: true
     third_party_settings: {  }
     type: video_embed_field_video
+    region: content
   links:
     weight: 100
+    region: content
 hidden:
   langcode: true

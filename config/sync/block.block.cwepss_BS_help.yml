@@ -10,7 +10,7 @@ _core:
   default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
 id: cwepss_BS_help
 theme: cwepss_BS
-region: '-1'
+region: navigation
 weight: -6
 provider: null
 plugin: help_block

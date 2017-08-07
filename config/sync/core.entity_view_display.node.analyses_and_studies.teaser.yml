@@ -4,6 +4,18 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.analyses_and_studies.field_analysis_date
+    - field.field.node.analyses_and_studies.field_analysis_rel_content
+    - field.field.node.analyses_and_studies.field_analysis_types
+    - field.field.node.analyses_and_studies.field_body
+    - field.field.node.analyses_and_studies.field_documents
+    - field.field.node.analyses_and_studies.field_images
+    - field.field.node.analyses_and_studies.field_links
+    - field.field.node.analyses_and_studies.field_locations
+    - field.field.node.analyses_and_studies.field_presentation_p_1
+    - field.field.node.analyses_and_studies.field_summary
+    - field.field.node.analyses_and_studies.field_tags
+    - field.field.node.analyses_and_studies.field_videos
     - node.type.analyses_and_studies
   module:
     - user
@@ -14,6 +26,7 @@ mode: teaser
 content:
   links:
     weight: 100
+    region: content
 hidden:
   field_analysis_date: true
   field_analysis_rel_content: true

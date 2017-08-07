@@ -25,8 +25,10 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
+    region: content
   links:
     weight: 101
+    region: content
   taxonomy_forums:
     type: entity_reference_label
     weight: 10
@@ -34,6 +36,7 @@ content:
     settings:
       link: true
     third_party_settings: {  }
+    region: content
 hidden:
   comment_forum: true
   langcode: true

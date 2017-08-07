@@ -161,12 +161,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
   field_documents:
     weight: 31
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    region: content
   field_images:
     weight: 28
     settings:
@@ -174,6 +176,7 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
   field_links:
     weight: 32
     settings:
@@ -181,12 +184,14 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
   field_locations:
     weight: 33
     settings:
       html5_geolocation: true
     third_party_settings: {  }
     type: geofield_latlon
+    region: content
   field_publications_bib_refs:
     weight: 29
     settings:
@@ -194,11 +199,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
+    region: content
   field_publications_date:
     weight: 3
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
   field_publications_highlights:
     weight: 5
     settings:
@@ -206,12 +213,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
   field_publications_matter_table:
     weight: 30
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
     type: file_generic
+    region: content
   field_publications_rel_content:
     weight: 34
     settings:
@@ -220,6 +229,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
   field_publications_square_img:
     weight: 26
     settings:
@@ -227,6 +237,7 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
   field_publications_type:
     weight: 2
     settings:
@@ -235,6 +246,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
   field_publications_vert_image:
     weight: 27
     settings:
@@ -242,6 +254,7 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
   field_summary:
     weight: 4
     settings:
@@ -249,6 +262,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: text_textarea
+    region: content
   field_tags:
     weight: 33
     settings:
@@ -257,11 +271,13 @@ content:
       placeholder: ''
     third_party_settings: {  }
     type: entity_reference_autocomplete
+    region: content
   path:
     type: path
     weight: 3
     settings: {  }
     third_party_settings: {  }
+    region: content
   title:
     type: string_textfield
     weight: 1
@@ -269,6 +285,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
 hidden:
   created: true
   langcode: true

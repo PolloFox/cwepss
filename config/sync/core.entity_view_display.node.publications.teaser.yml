@@ -4,6 +4,21 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
+    - field.field.node.publications.field_body
+    - field.field.node.publications.field_documents
+    - field.field.node.publications.field_images
+    - field.field.node.publications.field_links
+    - field.field.node.publications.field_locations
+    - field.field.node.publications.field_publications_bib_refs
+    - field.field.node.publications.field_publications_date
+    - field.field.node.publications.field_publications_highlights
+    - field.field.node.publications.field_publications_matter_table
+    - field.field.node.publications.field_publications_rel_content
+    - field.field.node.publications.field_publications_square_img
+    - field.field.node.publications.field_publications_type
+    - field.field.node.publications.field_publications_vert_image
+    - field.field.node.publications.field_summary
+    - field.field.node.publications.field_tags
     - node.type.publications
   module:
     - user
@@ -14,6 +29,7 @@ mode: teaser
 content:
   links:
     weight: 100
+    region: content
 hidden:
   field_body: true
   field_documents: true

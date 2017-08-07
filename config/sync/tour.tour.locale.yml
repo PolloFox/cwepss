@@ -17,7 +17,7 @@ tips:
     id: locale-overview
     plugin: text
     label: 'Traduction de l''interface utilisateur'
-    body: 'This page allows you to translate the user interface or modify existing translations. If you have installed your site initially in English, you must first add another language on the <a href="[site:url]admin/config/regional/language">Languages page</a>, in order to use this page.'
+    body: 'Cette page vous permet de traduire l''interface utilisateur ou de modifier des traductions existantes. Si vous avez installé votre site initialement en anglais, vous devez d''abord ajouter une autre langue dans la <a href="[site:url]admin/config/regional/language"> page des Langues </a>, afin d''utiliser cette page.'
     weight: 1
   locale-language:
     id: locale-language
@@ -71,5 +71,5 @@ tips:
     id: locale-continue
     plugin: text
     label: 'Continuant sur'
-    body: 'The translations you have made here will be used on your site''s user interface. If you want to use them on another site or modify them on an external translation editor, you can <a href="[site:url]admin/config/regional/translate/export">export them</a> to a .po file and <a href="[site:url]admin/config/regional/translate/import">import them</a> later.'
+    body: 'Les traductions que vous avez faites ici seront utilisées sur l''interface utilisateur de votre site. Si vous souhaitez les utiliser sur un autre site ou les modifier sur un éditeur de traduction externe, vous pouvez les <a href="[site:url]admin/config/regional/translate/export"> exporter </a> vers un fichier .po et les <a href="[site:url]admin/config/regional/translate/import"> importer </a> plus tard.'
     weight: 8

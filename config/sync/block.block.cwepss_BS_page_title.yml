@@ -8,7 +8,7 @@ _core:
   default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
 id: cwepss_BS_page_title
 theme: cwepss_BS
-region: '-1'
+region: navigation
 weight: 0
 provider: null
 plugin: page_title_block

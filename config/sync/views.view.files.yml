@@ -568,7 +568,7 @@ display:
           decimal: .
           separator: ','
           format_plural: true
-          format_plural_string: "@count emplacement\x03@count emplacements"
+          format_plural_string: "@count place\x03@count places"
           prefix: ''
           suffix: ''
           plugin_id: numeric
