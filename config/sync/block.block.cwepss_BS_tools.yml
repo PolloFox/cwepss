@@ -12,7 +12,7 @@ _core:
   default_config_hash: f3Dd5TnUiFDjFZp9yEGJInwt6cUzs7O6SvLTFTATSlU
 id: cwepss_BS_tools
 theme: cwepss_BS
-region: '-1'
+region: navigation
 weight: -1
 provider: null
 plugin: 'system_menu_block:tools'

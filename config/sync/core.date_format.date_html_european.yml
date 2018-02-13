@@ -1,8 +1,0 @@
-uuid: 0e1b19eb-e619-44a1-be0c-2fb497407355
-langcode: fr
-status: true
-dependencies: {  }
-id: date_html_european
-label: 'Date HTML European'
-locked: false
-pattern: d-m-Y

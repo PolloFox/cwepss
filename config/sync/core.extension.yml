@@ -7,7 +7,6 @@ module:
   block: 0
   block_content: 0
   bootstrap_layouts: 0
-  bootstrap_library: 0
   breakpoint: 0
   ckeditor: 0
   color: 0
@@ -40,7 +39,7 @@ module:
   image: 0
   kint: 0
   language: 0
-  layout_plugin: 0
+  layout_discovery: 0
   link: 0
   locale: 0
   menu_ui: 0
@@ -68,9 +67,7 @@ module:
   video_embed_field: 0
   views_ui: 0
   ds: 1
-  forum: 1
   menu_link_content: 1
-  ds_extras: 2
   views: 10
   paragraphs: 11
   standard: 1000
@@ -85,3 +82,4 @@ theme:
 _core:
   default_config_hash: m2GVq11UAOVuNgj8x0t5fMOPujpvQQ_zxLoaly1BMEU
 langcode: fr
+profile: standard
