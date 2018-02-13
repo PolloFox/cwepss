@@ -25,14 +25,16 @@
   %}
   {% if loop.first %}
       <div class="panel-body">
-          <div class="row">
   {% endif %}
-            <div class="col-xs-12 col-lg-6">
+        {% if loop.index is odd %}
+          <div class="views-news-list-row row">
+        {% endif %}
+          <div class="views-news-list-col col-xs-12 col-lg-6">
                 <div class="panel-group" id="accordion-{{ view.id|clean_class }}-{{ loop.index }}">
                     <div class="panel panel-default">
-                        {% if title %}
+                        {% if view.title %}
                             <div class="panel-heading">
-                                <h3 class="panel-title"><a href="#"><span class="cwepss-picture-icon glyphicon glyphicon-edit" aria-hidden="true"></span>{{ title }}</a></h3>
+                                <h3 class="panel-title"><a href="#"><span class="cwepss-picture-icon glyphicon glyphicon-edit" aria-hidden="true"></span>{{ viewstitle }}</a></h3>
                             </div>
                         {% endif %}
                             <div class="panel-body">
@@ -43,8 +45,10 @@
                     </div>
                 </div>
             </div>
-  {% if loop.last %}
+        {% if loop.index is even or loop.last %}
           </div>
+        {% endif %}
+  {% if loop.last %}
       </div>
   {% endif %}
 {% endfor %}
