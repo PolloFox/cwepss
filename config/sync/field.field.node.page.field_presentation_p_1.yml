@@ -25,6 +25,7 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
+    negate: 0
     target_bundles:
       paragraph_image_text: paragraph_image_text
       paragraph_text_2_cols: paragraph_text_2_cols
